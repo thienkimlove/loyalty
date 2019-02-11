@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Estrogen | Index</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" media="all">
+</head>
+<body>
+<div class="wrapper home pr">
+
+<!-- Start dang ky popup -->
+<div class="popup popup-regis" style="display: block;">
+    <div class="popup-content pa">
+        <a href="javascript:void(0)" class="close-popup pa" title="Đóng lại">X</a>
+        <div class="content">
+            <div class="title">
+                <strong>Tạo tài khoản</strong>
+                Bạn hãy tạo tài khoản mà bạn muốn
+            </div>
+            <form id="register_form" action="http://www.viemgan.com.vn/saveRegister" method="POST">
+                <div class="rows">
+                    <label>Tên đăng nhập <orange>*</orange></label>
+                    <input name="login" type="text" placeholder="Tên đăng nhập">
+                    <input type="hidden" name="_token" value="MFKVE9vWc3xqlasZpJpM4QZUp72ukCh7qBok1QcK">
+                </div>
+                <div class="rows">
+                    <label>Email <orange>*</orange></label>
+                    <input name="email" type="text" placeholder="Email">
+                </div>
+                <div class="rows">
+                    <label>Số điện thoại <orange>*</orange></label>
+                    <input name="phone" type="text" placeholder="Số điện thoại">
+                </div>
+                <div class="rows">
+                    <label>Mật khẩu <orange>*</orange></label>
+                    <input name="password" type="text" placeholder="Mật khẩu">
+                    <input type="checkbox" checked=""> Hiển thị mật khẩu
+                </div>
+                <div class="rows">
+                    <label>Họ tên <orange>*</orange></label>
+                    <input name="name" type="text" placeholder="Họ và tên">
+                </div>
+                <div class="rows">
+                    <label>Tỉnh/ Thành phố sinh sống <orange>*</orange></label>
+                    <input name="province" type="text" placeholder="Tỉnh/ Thành phố">
+                </div>
+                <div class="rows">
+                    <label>Ngày/tháng/năm sinh <orange>*</orange></label>
+                    <input name="dob" type="text" placeholder="DD/MM/YYYY">
+                </div>
+                <div class="rows">
+                    <label>CMND/ Căn cước công dân/ Hộ chiếu <orange>*</orange></label>
+                    <input name="ssn" type="text" placeholder="CMDN/ Căn cước công dân/ Hộ chiếu">
+                </div>
+                <div class="rows theLast">
+                    <label>Địa chỉ cụ thể <orange>*</orange></label>
+                    <textarea name="address" id="" cols="30" rows="4" placeholder="Địa chỉ cụ thể"></textarea>
+                </div>
+                <div class="note">
+                    Khi bạn nhấn nút "Tạo tài khoản" dưới đây thì có nghĩa là bạn đã đồng ý với các <br>
+                    <a href="http://www.viemgan.com.vn/thoa-thuan-cung-cap-va-su-dung-dich-vu-mang-xa-hoi-viemgan-com-vn.html" title="Điều khoản quy định" target="_blank">Điều khoản quy định</a>
+                    của viemgan.com.vn
+                </div>
+                <a href="javascript:void(0)" id="click_register" class="btn-create" title="Tạo tài khoản">Tạo tài khoản</a>
+                <div class="txt">Vui lòng xác nhận qua email</div>
+                <div id="errors" class="errors">Vui lòng nhập đầy đủ các thông tin trên</div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- End dang ky popup -->
+
+</div>
+</body>
+<script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="js/SmoothScroll.js" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="js/jquery.easing.min.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+</html>

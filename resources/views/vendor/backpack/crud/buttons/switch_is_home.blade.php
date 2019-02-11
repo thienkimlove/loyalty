@@ -1,0 +1,1 @@
+<a href="{{ url($crud->route.'/'.$entry->getKey().'/switch_is_home') }} " class="btn btn-xs btn-default"><i class="fa fa-{{ ($entry->is_home)? 'ban' : 'check' }}"></i>IsHome</a>

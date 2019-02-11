@@ -1,0 +1,1 @@
+<a href="{{ url($crud->route.'/'.$entry->getKey().'/switch_is_blog') }} " class="btn btn-xs btn-default"><i class="fa fa-{{ ($entry->is_blog)? 'ban' : 'check' }}"></i>IsBlog</a>
