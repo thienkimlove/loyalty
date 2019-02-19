@@ -5,7 +5,7 @@ namespace App\Http\Requests;
 use App\Http\Requests\Request;
 use Illuminate\Foundation\Http\FormRequest;
 
-class MemberRequest extends FormRequest
+class GiftRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -27,7 +27,8 @@ class MemberRequest extends FormRequest
     {
         return [
             'name' => 'required|min:5|max:255',
-            'address' => 'required'
+            'show_price' => 'required',
+            'gold_price' => 'required',
         ];
     }
 

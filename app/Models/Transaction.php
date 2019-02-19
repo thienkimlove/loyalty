@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Backpack\CRUD\CrudTrait;
 
-class Member extends Model
+class Transaction extends Model
 {
     use CrudTrait;
 
@@ -15,18 +15,12 @@ class Member extends Model
     |--------------------------------------------------------------------------
     */
 
-    protected $table = 'members';
+    protected $table = 'transactions';
     // protected $primaryKey = 'id';
     // public $timestamps = false;
     // protected $guarded = ['id'];
     protected $fillable = [
-        'name',
-        'phone',
-        'address',
-        'point',
-        'gold',
-        'status',
-        'process'
+        'member_id', 'event_id', 'point', 'gold', 'type'
     ];
     protected $hidden = [];
     // protected $dates = [];
@@ -42,6 +36,19 @@ class Member extends Model
     | RELATIONS
     |--------------------------------------------------------------------------
     */
+
+    public function member()
+    {
+        return $this->belongsTo(Member::class);
+    }
+
+    public function getEvent()
+    {
+        if ($this->type == 'add_card') {
+            $info = AddCard::find($this->event_id);
+            return 'Add Card '.$info->card->code;
+        }
+    }
 
     /*
     |--------------------------------------------------------------------------
@@ -61,15 +68,5 @@ class Member extends Model
     |--------------------------------------------------------------------------
     */
 
-    public function showPassword()
-    {
-        $card_id = AddCard::where('member_id', $this->id)->first()->card_id;
-        return Card::find($card_id)->code;
-    }
 
-    /*public function resetPassword()
-    {
-        $this->password = str_random(8);
-        $this->save();
-    }*/
 }

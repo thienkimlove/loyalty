@@ -5,16 +5,16 @@ namespace App\Http\Controllers\Admin;
 use Backpack\CRUD\app\Http\Controllers\CrudController;
 
 // VALIDATION: change the requests to match your own file names if you need form validation
-use App\Http\Requests\MemberRequest as StoreRequest;
-use App\Http\Requests\MemberRequest as UpdateRequest;
+use App\Http\Requests\ProductRequest as StoreRequest;
+use App\Http\Requests\ProductRequest as UpdateRequest;
 use Backpack\CRUD\CrudPanel;
 
 /**
- * Class MemberCrudController
+ * Class VideoCrudController
  * @package App\Http\Controllers\Admin
  * @property-read CrudPanel $crud
  */
-class MemberCrudController extends CrudController
+class ProductCrudController extends CrudController
 {
     public function setup()
     {
@@ -23,9 +23,9 @@ class MemberCrudController extends CrudController
         | CrudPanel Basic Information
         |--------------------------------------------------------------------------
         */
-        $this->crud->setModel('App\Models\Member');
-        $this->crud->setRoute(config('backpack.base.route_prefix') . '/member');
-        $this->crud->setEntityNameStrings('member', 'members');
+        $this->crud->setModel('App\Models\Product');
+        $this->crud->setRoute(config('backpack.base.route_prefix') . '/product');
+        $this->crud->setEntityNameStrings('product', 'products');
 
         /*
         |--------------------------------------------------------------------------
@@ -35,71 +35,75 @@ class MemberCrudController extends CrudController
 
         // TODO: remove setFromDb() and manually define Fields and Columns
         //$this->crud->setFromDb();
-
         $this->crud->addColumn([
             'name' => 'name',
-            'label' => 'Name',
+            'label' => 'Title',
         ]);
 
         $this->crud->addColumn([
-            'name' => 'phone',
-            'label' => 'Phone',
+            'name' => 'price',
+            'label' => 'Price',
         ]);
 
         $this->crud->addColumn([
-            'name' => 'point',
-            'label' => 'Point',
+            'name' => 'exchange_gold_price',
+            'label' => 'Exchange Price'
         ]);
 
         $this->crud->addColumn([
-            'name' => 'gold',
-            'label' => 'Gold',
+            'name' => 'image', // The db column name
+            'label' => "Image", // Table column heading
+            'type' => 'image',
         ]);
 
 
-        $this->crud->addColumn([
-            'name' => 'status',
-            'label' => 'Status?',
-            'type' => 'select_from_array',
-            'options' => [1 => 'Active', 0 => 'Inactive']
-        ]);
-
-
-        //FIELDS
-
-        $this->crud->addField([
+        // ------ CRUD FIELDS
+        $this->crud->addField([    // TEXT
             'name' => 'name',
             'label' => 'Name',
+            'type' => 'text',
+            'placeholder' => 'Your title here',
         ]);
 
         $this->crud->addField([
-            'name' => 'address',
-            'label' => 'Address',
+            'name' => 'price',
+            'label' => 'Price',
+            'type' => 'number'
+        ]);
+
+        $this->crud->addField([    // TEXT
+            'name' => 'desc',
+            'label' => 'Description',
             'type' => 'textarea'
         ]);
 
-
-        $this->crud->addField([
-            'name' => 'status',
-            'label' => 'Status',
-            'type' => 'select2_from_array',
-            'options' => [1 => 'Active', 0 => 'Inactive'],
-            'allows_null' => false,
-            'default' => 1,
+        $this->crud->addField([    // Image
+            'name' => 'image',
+            'label' => 'Image',
+            'type' => 'browse',
         ]);
 
-        $this->crud->denyAccess('create');
 
-        // add asterisk for fields that are required in MemberRequest
+
+        $this->crud->addField([
+            'name' => 'exchange_gold_price',
+            'label' => 'Gold Exchange Price',
+            'type' => 'number'
+        ]);
+
+
+        // add asterisk for fields that are required in VideoRequest
         $this->crud->setRequiredFields(StoreRequest::class, 'create');
         $this->crud->setRequiredFields(UpdateRequest::class, 'edit');
-
     }
 
     public function store(StoreRequest $request)
     {
         // your additional operations before save here
         $redirect_location = parent::storeCrud($request);
+
+        //$this->crud->entry->user_id = backpack_user()->id;
+        //$this->crud->entry->save();
         // your additional operations after save here
         // use $this->data['entry'] or $this->crud->entry
         return $redirect_location;

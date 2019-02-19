@@ -1,0 +1,8973 @@
+.ntladipage a, a {
+    text-decoration: none
+}
+
+.popup.ladi-popup-form, .popup.ladi-popup-form .popup-title, body {
+    font-family: "Open Sans", sans-serif !important
+}
+
+.closePop, .widget-element[lp-type=contact_form].bold-label label {
+    font-weight: 700
+}
+
+*, a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: 0 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+    display: block
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a {
+    cursor: pointer
+}
+
+body {
+    font-size: 13px;
+    line-height: 18px;
+    background: #fafafa;
+    color: #000
+}
+
+.widget-element {
+    position: absolute;
+    z-index: 1
+}
+
+.widget-element .widget-content {
+    text-rendering: unset !important;
+    width: 100%;
+    height: 100%;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    display: inline-block;
+    letter-spacing: 0
+}
+
+.widget-element i.widget-content {
+    font-style: normal
+}
+
+.widget-element[lp-type=item_menu] .widget-content:first-child {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+
+.widget-element[lp-type=textinline] .widget-content {
+    width: 100%;
+    height: 100%;
+    min-height: 35px;
+    background: 0 0 !important
+}
+
+.widget-element[lp-type=textparagraph] .widget-content {
+    width: 100%;
+    height: 100%;
+    min-height: 10px;
+    background: 0 0 !important
+}
+
+.widget-element[lp-type=slider] {
+    overflow: hidden
+}
+
+.widget-element[lp-type=item_slider] {
+    top: 0
+}
+
+.widget-element[lp-type=group-tmp] {
+    border: 1px dashed #00a52e
+}
+
+.widget-group .widget-content[lp-type=content-group] {
+    width: 100%;
+    height: 100%
+}
+
+.widget-section {
+    width: 100% !important;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    float: left;
+    position: relative;
+    background: #fafafa
+}
+
+.widget-section[lp-popup=true] {
+    width: 100%;
+    height: 100vh !important;
+    background: rgba(0, 0, 0, .5) !important;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    border: 0 !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    right: 0;
+    bottom: 0;
+    behavior: "smooth"
+}
+
+.widget-section[lp-popup=true] .container {
+    background: #fff;
+    position: relative;
+    margin: 0 auto 40px
+}
+
+.widget-element[lp-type=button] {
+    cursor: pointer;
+    border-radius: 0;
+    display: table !important;
+    text-align: center;
+    font-size: 20px;
+    height: 50px;
+    width: 100%;
+    position: absolute
+}
+
+.widget-element[lp-type=button] > .widget-content {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.widget-element[lp-type=shape] > .widget-content {
+    background: 0 0
+}
+
+.widget-element[lp-type=contact_form] .item {
+    width: 100%;
+    position: relative
+}
+
+.widget-element[lp-type=contact_form] label {
+    margin: 8px 0;
+    display: block;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.widget-element[lp-type=contact_form] input {
+    -webkit-appearance: none;
+    -moz-appearance: none
+}
+
+.widget-element[lp-type=contact_form] input, select, textarea {
+    width: 100%;
+    color: #666;
+    font-size: 13px;
+    border: 1px solid #eee;
+    padding: 8px 5px;
+    font-family: "Open Sans", sans-serif
+}
+
+.widget-element[lp-type=contact_form] button {
+    border: 0;
+    cursor: pointer;
+    background: #3d9be9;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 17px;
+    width: 100%
+}
+
+.widget-element[lp-type=contact_form].left-label .item {
+    position: relative
+}
+
+.widget-element[lp-type=contact_form].left-label label {
+    display: inline-block;
+    margin-right: 10px;
+    position: absolute;
+    top: 0;
+    max-width: 95px;
+    overflow: hidden;
+    line-height: 18px;
+    height: 22px;
+    padding: 4px
+}
+
+.widget-element[lp-type=contact_form].left-label input, .widget-element[lp-type=contact_form].left-label textarea {
+    max-width: calc(100% - 120px);
+    margin-left: 120px
+}
+
+.widget-element[lp-type=contact_form].left-label button {
+    float: right;
+    display: inline-block;
+    width: auto
+}
+
+.widget-element[lp-type=contact_form].hide-label label {
+    display: none
+}
+
+.widget-element[lp-type=contact_form].input-radius input, .widget-element[lp-type=contact_form].input-radius textarea {
+    border-radius: 7px
+}
+
+.widget-element[lp-type=menu-header][lp-navigation=true] .menuMobile, .widget-element[lp-type=menu-header][lp-navigation=true] .menuMobile > div {
+    width: 100%;
+    height: 100%
+}
+
+@media (max-width: 959px) {
+    .container {
+        height: 100%;
+        width: 375px;
+        margin: 0 auto;
+        padding: 0;
+        position: relative
+    }
+
+    .widget-element[lp-type=menu-header][lp-navigation=true] {
+        width: 50px;
+        height: 50px
+    }
+
+    .widget-element[lp-type=menu-header][lp-navigation=true] .widget-element[lp-type=item_menu] {
+        position: static;
+        width: 100vw !important
+    }
+
+    .widget-element[lp-type=menu-header][lp-navigation=true] .widget-element[lp-type=item_menu] a {
+        display: table-cell !important;
+        vertical-align: middle
+    }
+
+    .widget-element[lp-type=menu-header] .menuMobile div {
+        display: none
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        height: 100%;
+        width: 960px;
+        margin: 0 auto;
+        padding: 0;
+        position: relative
+    }
+
+    .widget-element[lp-type=menu-header] .menuMobile {
+        display: none
+    }
+}
+
+@media (min-width: 960px) {
+    .container {
+        height: 100%;
+        width: 960px;
+        margin: 0 auto;
+        padding: 0;
+        position: relative
+    }
+
+    .widget-element[lp-type=menu-header] .menuMobile {
+        display: none
+    }
+}
+
+.widget-element[lp-type=menu-header] {
+    z-index: 999
+}
+
+.widget-element[lp-type=image] {
+    width: 150px;
+    height: 150px
+}
+
+.widget-element[lp-type=image] img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.widget-element[lp-type=slide_show] .widget-content {
+    position: relative;
+    margin: 0 auto 60px;
+    padding: 0;
+    width: 100%;
+    height: 100%
+}
+
+.widget-element[lp-type=slide_show] .item_slide {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    float: left
+}
+
+.widget-element[lp-type=slide_show] .item_slide li {
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: none;
+    position: absolute
+}
+
+.widget-element[lp-type=slide_show] .item_slide li:first-child {
+    display: block
+}
+
+.widget-element[lp-type=slide_show] .item_slide .desc {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(80, 80, 80, .75);
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 5px 10px;
+    color: #fff;
+    display: none
+}
+
+.lp-popup-pub, .widget-element[lp-type=facebook_messages] > .widget-content, .widget-element[lp-type=image] > .widget-content {
+    overflow: hidden !important
+}
+
+.widget-element[lp-type=slide_show] .item_slide .desc span {
+    color: #FFF;
+    display: block;
+    font-size: .85em;
+    padding: 10px
+}
+
+.widget-element[lp-type=slide_show] .item_slide li .main-slide {
+    width: 100%;
+    max-width: 960px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative
+}
+
+.widget-element[lp-type=slide_show] .item_slide li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute
+}
+
+.widget-element[lp-type=slide_show] .control_slide i, .widget-element[lp-type=slide_show] .control_slide svg {
+    font-size: 32px;
+    line-height: 32px;
+    width: 32px;
+    height: 32px
+}
+
+.widget-element[lp-type=slide_show] .control_slide .control_left, .widget-element[lp-type=slide_show] .control_slide .control_right {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 50%;
+    margin-top: -16px;
+    outline: 0;
+    z-index: 9999;
+    color: #eee;
+    background: rgba(0, 0, 0, .2);
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer
+}
+
+.widget-element[lp-type=slide_show] .control_slide .control_left {
+    left: 10px
+}
+
+.widget-element[lp-type=slide_show] .control_slide .control_right {
+    right: 10px
+}
+
+.widget-element[lp-type=slide_show] .control_slide .control_left:hover, .widget-element[lp-type=slide_show] .control_slide .control_right:hover {
+    background: rgba(0, 0, 0, .4)
+}
+
+.widget-element[lp-type=slide_show] .pager {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    text-align: center;
+    display: none
+}
+
+.widget-element[lp-type=slide_show] .pager .pager-item {
+    display: inline-block
+}
+
+.widget-element[lp-type=slide_show] .pager a {
+    text-indent: -9999px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    outline: 0;
+    border-radius: 5px;
+    background: #666
+}
+
+.widget-element[lp-type=slide_show] .pager a.active, .widget-element[lp-type=slide_show] .pager a:hover {
+    background: #000
+}
+
+.widget-element[lp-type=slide_show].pager-white .pager a {
+    background: #fff
+}
+
+.widget-element[lp-type=slide_show].pager-white .pager a.active, .widget-element[lp-type=slide_show].pager-white .pager a:hover {
+    background: #eee
+}
+
+.widget-element[lp-type=slide_show].hide-caption .desc, .widget-element[lp-type=slide_show].hide-direction .control_slide, .widget-element[lp-type=slide_show].hide-pager .pager {
+    display: none
+}
+
+.widget-element[lp-type=slide_show].no-border .widget-content {
+    box-shadow: none;
+    border: 0
+}
+
+.screen-overlay {
+    background: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 150 !important;
+    display: block
+}
+
+span.formHintBubble:after {
+    height: 0;
+    width: 0;
+    position: absolute;
+    margin-left: -15px;
+    bottom: 0;
+    z-index: 9;
+    border-color: #323232 transparent #32323200;
+    border-style: solid;
+    border-width: 7px;
+    content: "";
+    margin-bottom: -14px;
+    left: 25px
+}
+
+div[lp-type=countdown] .widget-content > div {
+    width: 25%;
+    height: 100%;
+    float: left;
+    display: table
+}
+
+div[lp-type=countdown] .widget-content > div > span {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center
+}
+
+div[lp-type=linevertical] .widget-content .linevertical {
+    height: 100%
+}
+
+div[lp-type=line] .widget-content .line {
+    width: 100%;
+    height: 1px
+}
+
+.important, .important .widget-content {
+    width: 100% !important;
+    height: 100% !important
+}
+
+.important {
+    top: 0 !important;
+    left: 0 !important;
+    transform: rotate(0) !important;
+    mozTransform: rotate(0) !important;
+    msTransform: rotate(0) !important;
+    webkitTransform: rotate(0) !important;
+    oTransform: rotate(0) !important
+}
+
+.lp-overlay-popup, .lp-popup-pub {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0
+}
+
+.lp-popup-pub {
+    z-index: 999999999;
+    overflow-y: scroll
+}
+
+.ladi-carousel, .widget-element[lp-type=image] > .widget-content {
+    overflow: hidden
+}
+
+.lp-overlay-popup {
+    z-index: 99999999;
+    background: rgba(0, 0, 0, .5)
+}
+
+.lp-popup-pub .container {
+    background: #fff
+}
+
+.lp-popup-pub .widget-section {
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0) !important;
+    background-image: url() !important
+}
+
+.closePop {
+    background: url(https://static.ladipage.net/source/icon.png) no-repeat;
+    background-position-y: -76px;
+    cursor: pointer;
+    top: 10px !important;
+    right: 10px !important;
+    position: fixed;
+    z-index: 99999998;
+    width: 18px;
+    height: 18px;
+    color: transparent
+}
+
+.widget-element[lp-type=menu-header] .widget-content li[lp-item-show=hide] {
+    display: none
+}
+
+.popup.ladi-popup-form {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1050;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.popup.ladi-popup-form .popup-header {
+    position: relative;
+    background: #009FE3;
+    padding: 15px 20px
+}
+
+.popup.ladi-popup-form .popup-dialog {
+    border-radius: 8px !important;
+    width: 600px;
+    min-height: 200px;
+    min-width: 600px;
+    max-width: 1400px;
+    overflow: hidden;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background: #fff
+}
+
+.popup.ladi-popup-form .popup-title {
+    margin: 0;
+    color: #fff
+}
+
+.popup.ladi-popup-form button {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #fff;
+    background: 0 0;
+    border: 0;
+    font-size: 25px
+}
+
+.popup.ladi-popup-form .popup-content {
+    padding: 30px 20px;
+    color: rgba(6, 21, 40, .8);
+    text-align: center
+}
+
+.popup.ladi-popup-form .popup-content p, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px
+}
+
+@media (max-width: 767px) {
+    .popup.ladi-popup-form .popup-dialog {
+        width: 300px;
+        min-width: 300px
+    }
+}
+
+.ladi-carousel .wrap-child {
+    width: 2000%;
+    position: absolute
+}
+
+.ladi-carousel .wrap-child.animatecarousel {
+    transition: left .3s ease-out
+}
+
+.control-slider-left, .control-slider-right {
+    background: url(https://static.ladipage.net/source/arrows.svg) no-repeat;
+    height: 48px;
+    width: 48px;
+    position: absolute;
+    z-index: 9999;
+    top: calc(50% - 24px);
+    transition: transform .3s ease-out;
+    cursor: pointer
+}
+
+.control-slider-right {
+    right: 0
+}
+
+.control-slider-left:hover, .control-slider-right:hover {
+    transform: scale(1.3)
+}
+
+.control-slider-left {
+    left: 0;
+    background-position-x: -48px
+}
+
+.widget-element[lp-type=listop] ol.widget-content {
+    counter-reset: linum;
+    list-style: none;
+    padding: 0
+}
+
+.widget-element[lp-type=listop] ol.widget-content > li:last-child {
+    margin-bottom: 0 !important
+}
+
+.widget-element[lp-type=listop] ol.widget-content > li {
+    counter-increment: linum;
+    word-wrap: break-word
+}
+
+.widget-element[lp-type=listop] ol.widget-content > li::before {
+    float: left;
+    clear: left;
+    contain: content;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+    padding: 0 !important
+}
+
+.widget-element[lp-type=videoyoutube] .widget-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    vertical-align: middle
+}
+
+.widget-element[lp-type=videoyoutube] .widget-content embed {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.widget-element[lp-type=facebook_messages] .lp-close-fb-mes {
+    position: absolute;
+    z-index: 99999;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #29487d;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 20px
+}
+
+.widget-element[lp-type=facebook_messages] .lp-open-fb-mes svg {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin-right: 10px
+}
+
+.widget-element[lp-type=facebook_messages] .lp-open-fb-mes {
+    display: none;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 99999;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 45px;
+    padding: 5px 10px;
+    color: #fff;
+    background: #29487d;
+    line-height: 30px
+}
+
+.widget-element[lp-type=facebook_comment] .widget-content:first-child {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch
+}
+
+;
+.widget-element input,
+
+;
+.widget-element textarea,
+
+;
+body input,
+
+;
+body textarea {
+    font-family: "Open Sans", sans-serif !important
+}
+
+;
+input::-webkit-input-placeholder {
+    font-family: "Open Sans", sans-serif
+}
+
+input:-moz-placeholder {
+    font-family: "Open Sans", sans-serif
+}
+
+input::-moz-placeholder {
+    font-family: "Open Sans", sans-serif
+}
+
+input::-ms-input-placeholder {
+    font-family: "Open Sans", sans-serif
+}
+
+textarea::-webkit-input-placeholder {
+    font-family: "Open Sans", sans-serif
+}
+
+textarea:-moz-placeholder {
+    font-family: "Open Sans", sans-serif
+}
+
+textarea::-moz-placeholder {
+    font-family: "Open Sans", sans-serif
+}
+
+textarea::-ms-input-placeholder {
+    font-family: "Open Sans", sans-serif
+}
+
+.fb-comments iframe {
+    overflow: inherit !important
+}
+
+.widget-element[lp-type=item_form] .widget-content {
+    font-family: "Open Sans", sans-serif
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 375px;
+        margin: 0 auto
+    }
+
+    .widget-element[lp-type=slider] .widget-element[lp-type=item_slider] {
+        display: none
+    }
+
+    .widget-element[lp-type=slider] .widget-element[lp-type=item_slider]:nth-child(3) {
+        display: block
+    }
+
+    .widget-element[lp-type=item_slider] {
+        top: 0 !important;
+        left: auto !important;
+        position: relative !important;
+        float: left !important;
+        display: inline-block !important
+    }
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 375px;
+        margin: 0 auto
+    }
+}
+
+.formHintBubble {
+    opacity: .9;
+    right: 0;
+    bottom: -35px;
+    z-index: 999;
+    padding: 0 5px;
+    border-radius: 10px;
+    height: 35px;
+    position: absolute;
+    background: #323232;
+    color: #fff;
+    text-align: center;
+    line-height: 35px
+}
+
+.hide-background-image, .hide-background-image .container:first-child, .hide-background-image .widget-content:first-child, .hide-background-image .widget-content:first-child > .lp-show-image {
+    background-image: none !important
+}
+
+.iframeTks {
+    display: none !important
+}
+
+.widget-element[lp-type=slider] .wrap-child {
+    position: absolute;
+    top: 0;
+    width: 20000%;
+    height: 100%;
+    left: 0
+}
+
+.wrap-child .widget-item-child[lp-type=item_slider] {
+    position: relative !important;
+    left: auto !important;
+    display: inline-block !important
+}
+
+.ladi-widget-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.widget-element[lp-type=customhtml] .ladi-widget-overlay, .widget-element[lp-type=facebook_messages] .ladi-widget-overlay, .widget-element[lp-type=googlemap] .ladi-widget-overlay, .widget-element[lp-type=videoyoutube] .ladi-widget-overlay {
+    display: none !important
+}
+
+@media (max-width: 860px) and (min-width: 767px) {
+    .ladi-wraper-page {
+        display: inline;
+        font-size: 13px !important
+    }
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden
+}
+
+.ladi-wraper-page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 13px !important
+}
+
+.lp-strikeThrough {
+    text-decoration-line: line-through;
+    -webkit-text-decoration-line: line-through;
+    -moz-text-decoration-line: line-through
+}
+
+.lp-underline {
+    text-decoration-line: underline;
+    -webkit-text-decoration-line: underline;
+    -moz-text-decoration-line: underline
+}
+
+.widget-section[lp-popup=true] {
+    -webkit-overflow-scrolling: touch
+}
+
+.widget-section[lp-popup=true]::-webkit-scrollbar {
+    width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 100px
+}
+
+.widget-section[lp-popup=true]::-ms-scrollbar {
+    width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 100px
+}
+
+.widget-section[lp-popup=true]::-moz-scrollbar {
+    width: 0;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 100px
+}
+
+.hide-background-image .widget-content:first-child > img {
+    display: none;
+    visibility: hidden
+}
+
+.widget-section[lp-popup=true] .container .overlay-container-popup {
+    width: 100%;
+    height: 100%
+}
+
+.ntladipage, .nttime {
+    display: inline-block
+}
+
+.ladi-notify {
+    margin: 10px;
+    padding: 5px;
+    box-shadow: 0 0 1px rgba(64, 64, 64, .3), 0 8px 50px rgba(64, 64, 64, .05);
+    border-radius: 40px;
+    position: fixed !important;
+    opacity: 0;
+    color: rgba(64, 64, 64, 1);
+    background: rgba(250, 250, 250, .9);
+    z-index: 9999 !important;
+    line-height: 17px;
+    transition: top .5s ease-in-out, bottom .5s ease-in-out, opacity .5s ease-in-out
+}
+
+.ntimage img {
+    float: left;
+    margin-right: 13px;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px
+}
+
+.ntcontent, .nttitle {
+    height: 17px;
+    overflow: hidden
+}
+
+.nttitle {
+    font-size: 13px;
+    font-weight: 700
+}
+
+.ntcontent {
+    font-size: 12px
+}
+
+.nttime {
+    line-height: 1em;
+    font-size: 11px
+}
+
+.ntladipage {
+    font-size: 10px;
+    margin-left: 2px;
+    position: relative;
+    padding: 0 5px;
+    cursor: pointer;
+    opacity: .6
+}
+
+.ntladipage svg {
+    vertical-align: middle
+}
+
+.ntladipage a {
+    color: rgba(64, 64, 64, 1)
+}
+
+.ladi-readmore-icon {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    opacity: 1;
+    width: 48px !important;
+    height: 48px !important;
+    background: url(https://static.ladipage.net/source/arrows.svg) no-repeat;
+    background-position-x: -96px;
+    z-index: 9999
+}
+
+.ladi-readmore-icon:hover {
+    transform: scale(1.3)
+}
+
+.ladi-readmore-icon.show {
+    display: block;
+    margin: auto;
+    left: 0;
+    right: 0
+}
+
+.ladi-readmore-icon.hidden {
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden
+}
+
+.sectionanimate {
+    transition: height .3s ease-out
+}
+
+.ladi-word b, .ladi-word i {
+    font: inherit
+}
+
+.ladi-animated-headline.clip span, .ladi-animated-headline.loading-bar span, .ladi-animated-headline.slide span, .ladi-word, .ladi-word b {
+    display: inline-block
+}
+
+.ladi-animated-headline.type .ladi-word.selected .after, .ladi-animated-headline.type b {
+    visibility: hidden
+}
+
+.ladi-animated-headline.clip .ladi-word, .ladi-animated-headline.loading-bar .ladi-word, .ladi-animated-headline.slide .ladi-word, .ladi-animated-headline.type .ladi-word {
+    vertical-align: top
+}
+
+.ladi-word {
+    position: relative;
+    text-align: left
+}
+
+.ladi-word b {
+    position: absolute;
+    white-space: nowrap;
+    left: 0;
+    top: 0
+}
+
+.ladi-word b.is-visible {
+    position: relative
+}
+
+.no-js .ladi-word b {
+    opacity: 0
+}
+
+.no-js .ladi-word b.is-visible {
+    opacity: 1
+}
+
+.ladi-animated-headline.rotate-1 .ladi-word {
+    -webkit-perspective: 300px;
+    perspective: 300px
+}
+
+.ladi-animated-headline.rotate-1 b {
+    opacity: 0;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg)
+}
+
+.ladi-animated-headline.rotate-1 b.is-visible {
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-animation: ah-rotate-1-in 1.2s;
+    animation: ah-rotate-1-in 1.2s
+}
+
+.ladi-animated-headline.rotate-1 b.is-hidden {
+    -webkit-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    -webkit-animation: ah-rotate-1-out 1.2s;
+    animation: ah-rotate-1-out 1.2s
+}
+
+@-webkit-keyframes ah-rotate-1-in {
+    0% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        opacity: 0
+    }
+    35% {
+        -webkit-transform: rotateX(120deg);
+        transform: rotateX(120deg);
+        opacity: 0
+    }
+    65% {
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        opacity: 1
+    }
+}
+
+@keyframes ah-rotate-1-in {
+    0% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        opacity: 0
+    }
+    35% {
+        -webkit-transform: rotateX(120deg);
+        transform: rotateX(120deg);
+        opacity: 0
+    }
+    65% {
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: rotateX(360deg);
+        transform: rotateX(360deg);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes ah-rotate-1-out {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1
+    }
+    35% {
+        -webkit-transform: rotateX(-40deg);
+        transform: rotateX(-40deg);
+        opacity: 1
+    }
+    65% {
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        opacity: 0
+    }
+}
+
+@keyframes ah-rotate-1-out {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+        opacity: 1
+    }
+    35% {
+        -webkit-transform: rotateX(-40deg);
+        transform: rotateX(-40deg);
+        opacity: 1
+    }
+    65% {
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+        opacity: 0
+    }
+}
+
+.ladi-animated-headline.type .ladi-word .after {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 90%;
+    width: 1px;
+    background-color: #363636
+}
+
+.ladi-animated-headline.type .ladi-word.waiting .after {
+    -webkit-animation: ah-pulse 1s infinite;
+    animation: ah-pulse 1s infinite
+}
+
+.ladi-animated-headline.type .ladi-word.selected {
+    background-color: rgba(109, 169, 252, .5)
+}
+
+.ladi-animated-headline.type b.is-visible {
+    visibility: visible
+}
+
+.ladi-animated-headline.type i {
+    position: absolute;
+    visibility: hidden
+}
+
+.ladi-animated-headline.type i.in {
+    position: relative;
+    visibility: visible
+}
+
+@-webkit-keyframes ah-pulse {
+    0% {
+        -webkit-transform: translateY(-50%) scale(1);
+        transform: translateY(-50%) scale(1);
+        opacity: 1
+    }
+    40% {
+        -webkit-transform: translateY(-50%) scale(.9);
+        transform: translateY(-50%) scale(.9);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translateY(-50%) scale(0);
+        transform: translateY(-50%) scale(0);
+        opacity: 0
+    }
+}
+
+@keyframes ah-pulse {
+    0% {
+        -webkit-transform: translateY(-50%) scale(1);
+        transform: translateY(-50%) scale(1);
+        opacity: 1
+    }
+    40% {
+        -webkit-transform: translateY(-50%) scale(.9);
+        transform: translateY(-50%) scale(.9);
+        opacity: 0
+    }
+    100% {
+        -webkit-transform: translateY(-50%) scale(0);
+        transform: translateY(-50%) scale(0);
+        opacity: 0
+    }
+}
+
+.ladi-animated-headline.rotate-2 .ladi-word {
+    -webkit-perspective: 300px;
+    perspective: 300px
+}
+
+.ladi-animated-headline.rotate-2 em, .ladi-animated-headline.rotate-2 i {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.ladi-animated-headline.rotate-2 b {
+    opacity: 0
+}
+
+.ladi-animated-headline.rotate-2 i {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translateZ(-20px) rotateX(90deg);
+    transform: translateZ(-20px) rotateX(90deg);
+    opacity: 0
+}
+
+.is-visible .ladi-animated-headline.rotate-2 i {
+    opacity: 1
+}
+
+.ladi-animated-headline.rotate-2 i.in {
+    -webkit-animation: ah-rotate-2-in .4s forwards;
+    animation: ah-rotate-2-in .4s forwards
+}
+
+.ladi-animated-headline.rotate-2 i.out {
+    -webkit-animation: ah-rotate-2-out .4s forwards;
+    animation: ah-rotate-2-out .4s forwards
+}
+
+.ladi-animated-headline.rotate-2 em {
+    -webkit-transform: translateZ(20px);
+    transform: translateZ(20px)
+}
+
+.no-csstransitions .ladi-animated-headline.rotate-2 i {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 0
+}
+
+.no-csstransitions .ladi-animated-headline.rotate-2 i em {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+}
+
+.no-csstransitions .ladi-animated-headline.rotate-2 .is-visible i {
+    opacity: 1
+}
+
+@-webkit-keyframes ah-rotate-2-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(90deg);
+        transform: translateZ(-20px) rotateX(90deg)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(-10deg);
+        transform: translateZ(-20px) rotateX(-10deg)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0);
+        transform: translateZ(-20px) rotateX(0)
+    }
+}
+
+@keyframes ah-rotate-2-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(90deg);
+        transform: translateZ(-20px) rotateX(90deg)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(-10deg);
+        transform: translateZ(-20px) rotateX(-10deg)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0);
+        transform: translateZ(-20px) rotateX(0)
+    }
+}
+
+@-webkit-keyframes ah-rotate-2-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0);
+        transform: translateZ(-20px) rotateX(0)
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-100deg);
+        transform: translateZ(-20px) rotateX(-100deg)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-90deg);
+        transform: translateZ(-20px) rotateX(-90deg)
+    }
+}
+
+@keyframes ah-rotate-2-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateZ(-20px) rotateX(0);
+        transform: translateZ(-20px) rotateX(0)
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-100deg);
+        transform: translateZ(-20px) rotateX(-100deg)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateZ(-20px) rotateX(-90deg);
+        transform: translateZ(-20px) rotateX(-90deg)
+    }
+}
+
+.ladi-animated-headline.loading-bar .ladi-word .after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: #356efd;
+    z-index: 2;
+    -webkit-transition: width .3s -.1s;
+    transition: width .3s -.1s
+}
+
+.ladi-animated-headline.loading-bar .ladi-word.is-loading .after {
+    width: 100%;
+    -webkit-transition: width 3s;
+    transition: width 3s
+}
+
+.ladi-animated-headline.loading-bar b {
+    top: .2em;
+    opacity: 0;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s
+}
+
+.ladi-animated-headline.loading-bar b.is-visible {
+    opacity: 1;
+    top: 0
+}
+
+.ladi-animated-headline.slide b {
+    opacity: 0;
+    top: .2em
+}
+
+.ladi-animated-headline.slide b.is-visible {
+    top: 0;
+    opacity: 1;
+    -webkit-animation: slide-in .6s;
+    animation: slide-in .6s
+}
+
+.ladi-animated-headline.slide b.is-hidden {
+    -webkit-animation: slide-out .6s;
+    animation: slide-out .6s
+}
+
+@-webkit-keyframes slide-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateY(20%);
+        transform: translateY(20%)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: translateY(120%);
+        transform: translateY(120%)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%)
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: translateY(120%);
+        transform: translateY(120%)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%)
+    }
+}
+
+.ladi-animated-headline.clip .ladi-word .after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #363636
+}
+
+.ladi-animated-headline.clip b {
+    opacity: 0
+}
+
+.ladi-animated-headline.clip b.is-visible {
+    opacity: 1
+}
+
+.ladi-animated-headline.zoom .ladi-word {
+    -webkit-perspective: 300px;
+    perspective: 300px
+}
+
+.ladi-animated-headline.zoom b {
+    opacity: 0
+}
+
+.ladi-animated-headline.zoom b.is-visible {
+    opacity: 1;
+    -webkit-animation: zoom-in .8s;
+    animation: zoom-in .8s
+}
+
+.ladi-animated-headline.zoom b.is-hidden {
+    -webkit-animation: zoom-out .8s;
+    animation: zoom-out .8s
+}
+
+@-webkit-keyframes zoom-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateZ(100px);
+        transform: translateZ(100px)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateZ(100px);
+        transform: translateZ(100px)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+@-webkit-keyframes zoom-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateZ(-100px);
+        transform: translateZ(-100px)
+    }
+}
+
+@keyframes zoom-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateZ(-100px);
+        transform: translateZ(-100px)
+    }
+}
+
+.ladi-animated-headline.rotate-3 .ladi-word {
+    -webkit-perspective: 300px;
+    perspective: 300px
+}
+
+.ladi-animated-headline.rotate-3 b {
+    opacity: 0
+}
+
+.ladi-animated-headline.rotate-3 i {
+    display: inline-block;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.is-visible .ladi-animated-headline.rotate-3 i {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0)
+}
+
+.ladi-animated-headline.rotate-3 i.in {
+    -webkit-animation: ah-rotate-3-in .6s forwards;
+    animation: ah-rotate-3-in .6s forwards
+}
+
+.ladi-animated-headline.rotate-3 i.out {
+    -webkit-animation: ah-rotate-3-out .6s forwards;
+    animation: ah-rotate-3-out .6s forwards
+}
+
+.no-csstransitions .ladi-animated-headline.rotate-3 i {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0);
+    opacity: 0
+}
+
+.no-csstransitions .ladi-animated-headline.rotate-3 .is-visible i {
+    opacity: 1
+}
+
+@-webkit-keyframes ah-rotate-3-in {
+    0% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0)
+    }
+}
+
+@keyframes ah-rotate-3-in {
+    0% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0)
+    }
+}
+
+@-webkit-keyframes ah-rotate-3-out {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0)
+    }
+    100% {
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg)
+    }
+}
+
+@keyframes ah-rotate-3-out {
+    0% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0)
+    }
+    100% {
+        -webkit-transform: rotateY(-180deg);
+        transform: rotateY(-180deg)
+    }
+}
+
+.ladi-animated-headline.scale b {
+    opacity: 0
+}
+
+.ladi-animated-headline.scale i {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0)
+}
+
+.is-visible .ladi-animated-headline.scale i {
+    opacity: 1
+}
+
+.ladi-animated-headline.scale i.in {
+    -webkit-animation: scale-up .6s forwards;
+    animation: scale-up .6s forwards
+}
+
+.ladi-animated-headline.scale i.out {
+    -webkit-animation: scale-down .6s forwards;
+    animation: scale-down .6s forwards
+}
+
+.no-csstransitions .ladi-animated-headline.scale i {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0
+}
+
+.no-csstransitions .ladi-animated-headline.scale .is-visible i {
+    opacity: 1
+}
+
+@-webkit-keyframes scale-up {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+    60% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes scale-up {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+    60% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 1
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes scale-down {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+    60% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+}
+
+@keyframes scale-down {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1
+    }
+    60% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0
+    }
+}
+
+.ladi-animated-headline.push b {
+    opacity: 0
+}
+
+.ladi-animated-headline.push b.is-visible {
+    opacity: 1;
+    -webkit-animation: push-in .6s;
+    animation: push-in .6s
+}
+
+.ladi-animated-headline.push b.is-hidden {
+    -webkit-animation: push-out .6s;
+    animation: push-out .6s
+}
+
+@-webkit-keyframes push-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(10%);
+        transform: translateX(10%)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@keyframes push-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%)
+    }
+    60% {
+        opacity: 1;
+        -webkit-transform: translateX(10%);
+        transform: translateX(10%)
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@-webkit-keyframes push-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: translateX(110%);
+        transform: translateX(110%)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%)
+    }
+}
+
+@keyframes push-out {
+    0% {
+        opacity: 1;
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+    60% {
+        opacity: 0;
+        -webkit-transform: translateX(110%);
+        transform: translateX(110%)
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%)
+    }
+}
+
+[lp-popup="true"].ladi-widget-overlay {
+    display: none !important;
+}
+
+@media (min-width: 768px) {
+    #SECTION764 {
+        width: 100%;
+        height: 484px;
+    }
+
+    #POPUP970 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #POPUP970 .container {
+        width: 450px !important;
+        height: 425px;
+        top: calc(100% - 425px);
+    }
+
+    #SECTION821 {
+        width: 100%;
+        height: 484px;
+    }
+
+    #POPUP961 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #POPUP961 .container {
+        width: 450px !important;
+        height: 425px;
+        top: calc(100% - 425px);
+    }
+
+    #SECTION845 {
+        width: 100%;
+        height: 767.5px;
+    }
+
+    #SECTION9 {
+        width: 100%;
+        height: 300px;
+    }
+
+    #SECTION925 {
+        width: 100%;
+        height: 295px;
+    }
+
+    #SECTION589 {
+        width: 100%;
+        height: 322px;
+    }
+
+    #SECTION82 {
+        width: 100%;
+        height: 505px;
+    }
+
+    #POPUP947 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #POPUP947 .container {
+        width: 740px !important;
+        height: 476px;
+        top: calc(100% - 476px);
+    }
+
+    #SECTION666 {
+        width: 100%;
+        height: 380px;
+    }
+
+    #SECTION776 {
+        width: 100%;
+        height: 329px;
+    }
+
+    #LINE765 {
+        top: 92px;
+        left: 22.5px;
+        width: 298px;
+        height: 25px;
+    }
+
+    #BUTTON766 {
+        top: 342px;
+        left: 27.0079px;
+        padding: 0px;
+        width: 147px;
+        height: 35px;
+    }
+
+    #BUTTON766 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #HEADLINE767 {
+        top: 58px;
+        left: -73.5px;
+        padding: 0px;
+        width: 500px;
+        height: 46px;
+    }
+
+    #HEADLINE767 > .widget-content {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #HEADLINE775 {
+        top: 23px;
+        left: -5px;
+        padding: 0px;
+        width: 500px;
+        height: 28px;
+    }
+
+    #HEADLINE775 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #BOX810 {
+        top: 136px;
+        left: 20.5121px;
+        width: 263.453125px;
+        height: 47.1875px;
+    }
+
+    #HEADLINE812 {
+        top: 14px;
+        left: 13px;
+        padding: 0px;
+        width: 200px;
+        height: 18px;
+    }
+
+
+
+    #HEADLINE812 > .widget-content {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #HEADLINE912 {
+        top: 177px;
+        left: 8px;
+        padding: 0px;
+        width: 380px;
+        height: 16px;
+    }
+
+    #HEADLINE912 > .widget-content {
+        font-size: 10px;
+        text-align: left;
+    }
+
+    #BOX814 {
+        top: 194.188px;
+        left: 23.0149px;
+        width: 263.453125px;
+        height: 47.1875px;
+    }
+
+    #HEADLINE815 {
+        top: 14.59375px;
+        left: 7px;
+        padding: 0px;
+        width: 200px;
+        height: 18px;
+    }
+
+    #HEADLINE815 > .widget-content {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #BOX816 {
+        top: 253.015px;
+        left: 25.5155px;
+        width: 263.453125px;
+        height: 47.1875px;
+    }
+
+    #HEADLINE817 {
+        top: 14.59375px;
+        left: 8px;
+        padding: 0px;
+        width: 249.453125px;
+        height: 18px;
+    }
+
+    #HEADLINE817 > .widget-content {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #LINE818 {
+        top: 377px;
+        left: 20.5px;
+        width: 344px;
+        height: 25px;
+    }
+
+    #HEADLINE820 {
+        top: 402px;
+        left: 18px;
+        padding: 0px;
+        width: 316px;
+        height: 52px;
+    }
+
+    #HEADLINE820 > .widget-content {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    #BOX971 {
+        top: -0.5px;
+        left: -1.5px;
+        width: 452px;
+        height: 68.59375px;
+    }
+
+    #HEADLINE972 {
+        top: 24px;
+        left: 54px;
+        padding: 0px;
+        width: 366px;
+        height: 36px;
+    }
+
+    #HEADLINE972 > .widget-content {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    #PARAGRAPH975 {
+        top: 91.5px;
+        left: 63.5px;
+        padding: 0px;
+        width: 329px;
+        height: 48px;
+    }
+
+    #PARAGRAPH975 > .widget-content {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #FORM973 {
+        top: 187.5px;
+        left: 63.5px;
+        width: 300px;
+        height: 82px;
+    }
+
+    #FORM973 > .widget-content {
+        font-size: 16px;
+    }
+
+    #ITEM_FORM977 {
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #ITEM_FORM978 {
+        top: 46px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #BUTTON976 {
+        top: 307.5px;
+        left: 63.5px;
+        padding: 0px;
+        width: 107px;
+        height: 40px;
+    }
+
+    #BUTTON976 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #BUTTON980 {
+        top: 307.5px;
+        left: 217px;
+        padding: 0px;
+        width: 146px;
+        height: 40px;
+    }
+
+    #BUTTON980 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #HEADLINE824 {
+        top: 58px;
+        left: -72.5px;
+        padding: 0px;
+        width: 500px;
+        height: 46px;
+    }
+
+    #HEADLINE824 > .widget-content {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #HEADLINE825 {
+        top: 23px;
+        left: 0px;
+        padding: 0px;
+        width: 500px;
+        height: 28px;
+    }
+
+    #HEADLINE825 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #LINE832 {
+        top: 371px;
+        left: 18.5px;
+        width: 344px;
+        height: 25px;
+    }
+
+    #HEADLINE833 {
+        top: 124px;
+        left: 14px;
+        padding: 0px;
+        width: 500px;
+        height: 100px;
+    }
+
+    #HEADLINE833 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #LINE834 {
+        top: 94px;
+        left: 17.5317px;
+        width: 263.5px;
+        height: 25px;
+    }
+
+    #HEADLINE837 {
+        top: 258px;
+        left: 47px;
+        padding: 0px;
+        width: 500px;
+        height: 120px;
+    }
+
+    #HEADLINE837 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #SHAPE838 {
+        top: 253px;
+        left: 21px;
+        width: 21px;
+        height: 21px;
+    }
+
+    #SHAPE839 {
+        top: 291px;
+        left: 16.5px;
+        width: 21px;
+        height: 21px;
+    }
+
+    #SHAPE840 {
+        top: 332px;
+        left: 17.5px;
+        width: 21px;
+        height: 21px;
+    }
+
+    #HEADLINE842 {
+        top: 396px;
+        left: 14px;
+        padding: 0px;
+        width: 373px;
+        height: 52px;
+    }
+
+    #HEADLINE842 > .widget-content {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    #BOX962 {
+        top: -0.5px;
+        left: -1.5px;
+        width: 452px;
+        height: 73px;
+    }
+
+    #HEADLINE963 {
+        top: 24px;
+        left: 54px;
+        padding: 0px;
+        width: 366px;
+        height: 36px;
+    }
+
+    #HEADLINE963 > .widget-content {
+        font-size: 26px;
+        text-align: center;
+    }
+
+    #PARAGRAPH964 {
+        top: 82.5px;
+        left: 63.5px;
+        padding: 0px;
+        width: 329px;
+        height: 120px;
+    }
+
+    #PARAGRAPH964 > .widget-content {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #FORM965 {
+        top: 216.5px;
+        left: 63.5px;
+        width: 300px;
+        height: 128px;
+    }
+
+    #FORM965 > .widget-content {
+        font-size: 16px;
+    }
+
+    #ITEM_FORM966 {
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #ITEM_FORM967 {
+        top: 46px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #ITEM_FORM968 {
+        top: 92px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #BUTTON969 {
+        top: 357.5px;
+        left: 63.5px;
+        padding: 0px;
+        width: 331px;
+        height: 40px;
+    }
+
+    #BUTTON969 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #HEADLINE846 {
+        top: 111px;
+        left: 206px;
+        padding: 0px;
+        width: 591px;
+        height: 44px;
+    }
+
+    #HEADLINE846 > .widget-content {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #IMAGE848 .widget-content:first-child .lp-show-image:first-child {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("https://static.ladipage.net/s550x500/5c287a86b0bb7c271ce70c23/hyundai-accent-2017-gia-bao-nhieu-thiet-ke-van-hanh-thong-1549209325.jpg");
+    }
+
+    #IMAGE848 {
+        top: 190px;
+        left: 3.5px;
+        width: 302px;
+        height: 270px;
+    }
+
+    #BOX849 {
+        top: 191px;
+        left: 7px;
+        width: 275px;
+        height: 66px;
+    }
+
+    #HEADLINE850 {
+        top: 12px;
+        left: 9px;
+        padding: 0px;
+        width: 208px;
+        height: 20px;
+    }
+
+    #HEADLINE850 > .widget-content {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #SHAPE851 {
+        top: 18px;
+        left: 228px;
+        width: 32px;
+        height: 32px;
+    }
+
+    #IMAGE852 .widget-content:first-child .lp-show-image:first-child {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("https://static.ladipage.net/s550x500/5c287a86b0bb7c271ce70c23/2-1549214176.png");
+    }
+
+    #IMAGE852 {
+        top: 190px;
+        left: 330px;
+        width: 302px;
+        height: 270px;
+    }
+
+    #BOX853 {
+        top: 191px;
+        left: 6px;
+        width: 275px;
+        height: 66px;
+    }
+
+    #HEADLINE854 {
+        top: 12px;
+        left: 9px;
+        padding: 0px;
+        width: 208px;
+        height: 40px;
+    }
+
+    #HEADLINE854 > .widget-content {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #SHAPE855 {
+        top: 18px;
+        left: 228px;
+        width: 32px;
+        height: 32px;
+    }
+
+    #IMAGE856 .widget-content:first-child .lp-show-image:first-child {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("https://static.ladipage.net/s550x500/5c287a86b0bb7c271ce70c23/ban-vang-sjc-1549214310.png");
+    }
+
+    #IMAGE856 {
+        top: 190px;
+        left: 659px;
+        width: 302px;
+        height: 270px;
+    }
+
+    #BOX857 {
+        top: 191px;
+        left: 7px;
+        width: 275px;
+        height: 66px;
+    }
+
+    #HEADLINE858 {
+        top: 12px;
+        left: 9px;
+        padding: 0px;
+        width: 208px;
+        height: 40px;
+    }
+
+    #HEADLINE858 > .widget-content {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #SHAPE859 {
+        top: 17px;
+        left: 227px;
+        width: 32px;
+        height: 32px;
+    }
+
+    #HEADLINE860 {
+        top: 75px;
+        left: 257px;
+        padding: 0px;
+        width: 500px;
+        height: 28px;
+    }
+
+    #HEADLINE860 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #HEADLINE996 {
+        top: 508px;
+        left: -9.5px;
+        padding: 0px;
+        width: 500px;
+        height: 28px;
+    }
+
+    #HEADLINE996 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #IMAGE997 .widget-content:first-child .lp-show-image:first-child {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("https://static.ladipage.net/s550x450/5c287a86b0bb7c271ce70c23/78c5e325e343aeb6b068cbe2c9ad76c0-1549564258.png");
+    }
+
+    #IMAGE997 {
+        top: 513px;
+        left: 551.422px;
+        width: 342.546875px;
+        height: 220.5625px;
+    }
+
+    #HEADLINE998 {
+        top: 570.5px;
+        left: 117px;
+        padding: 0px;
+        width: 318px;
+        height: 92px;
+    }
+
+    #HEADLINE998 > .widget-content {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    #BOX27 {
+        top: 69px;
+        left: 1px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE15 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE15 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH16 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 102px;
+    }
+
+    #PARAGRAPH16 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE28 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX41 {
+        top: 69px;
+        left: 330px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE42 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE42 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH43 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 68px;
+    }
+
+    #PARAGRAPH43 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE44 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX37 {
+        top: 70px;
+        left: 659px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE38 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE38 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH39 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 85px;
+    }
+
+    #PARAGRAPH39 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE40 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX926 {
+        top: 69px;
+        left: 1px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE927 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE927 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH928 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 85px;
+    }
+
+    #PARAGRAPH928 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE929 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX930 {
+        top: 74px;
+        left: 330px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE931 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE931 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH932 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 51px;
+    }
+
+    #PARAGRAPH932 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE933 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX934 {
+        top: 70px;
+        left: 659px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE935 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE935 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH936 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 85px;
+    }
+
+    #PARAGRAPH936 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE937 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX657 {
+        top: 114px;
+        left: 779px;
+        width: 182px;
+        height: 138px;
+    }
+
+    #HEADLINE658 {
+        top: 17px;
+        left: 43px;
+        padding: 0px;
+        width: 103px;
+        height: 28px;
+    }
+
+    #HEADLINE658 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #SHAPE659 {
+        top: 56px;
+        left: 73px;
+        width: 39px;
+        height: 39px;
+    }
+
+    #HEADLINE660 {
+        top: 102px;
+        left: 41px;
+        padding: 0px;
+        width: 103px;
+        height: 18px;
+    }
+
+    #HEADLINE660 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #BOX612 {
+        top: 110px;
+        left: 0px;
+        width: 182px;
+        height: 138px;
+    }
+
+    #HEADLINE595 {
+        top: 17px;
+        left: 43px;
+        padding: 0px;
+        width: 103px;
+        height: 28px;
+    }
+
+    #HEADLINE595 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #SHAPE593 {
+        top: 56px;
+        left: 73px;
+        width: 39px;
+        height: 39px;
+    }
+
+    #HEADLINE594 {
+        top: 102px;
+        left: 41px;
+        padding: 0px;
+        width: 103px;
+        height: 36px;
+    }
+
+    #HEADLINE594 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #BOX645 {
+        top: 110px;
+        left: 195px;
+        width: 182px;
+        height: 138px;
+    }
+
+    #HEADLINE646 {
+        top: 17px;
+        left: 43px;
+        padding: 0px;
+        width: 103px;
+        height: 28px;
+    }
+
+    #HEADLINE646 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #SHAPE647 {
+        top: 56px;
+        left: 73px;
+        width: 39px;
+        height: 39px;
+    }
+
+    #HEADLINE648 {
+        top: 102px;
+        left: 41px;
+        padding: 0px;
+        width: 103px;
+        height: 36px;
+    }
+
+    #HEADLINE648 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #BOX649 {
+        top: 112px;
+        left: 390px;
+        width: 182px;
+        height: 138px;
+    }
+
+    #HEADLINE650 {
+        top: 17px;
+        left: 43px;
+        padding: 0px;
+        width: 103px;
+        height: 28px;
+    }
+
+    #HEADLINE650 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #SHAPE651 {
+        top: 56px;
+        left: 73px;
+        width: 39px;
+        height: 39px;
+    }
+
+    #HEADLINE652 {
+        top: 102px;
+        left: 41px;
+        padding: 0px;
+        width: 103px;
+        height: 36px;
+    }
+
+    #HEADLINE652 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #BOX653 {
+        top: 113px;
+        left: 584px;
+        width: 182px;
+        height: 138px;
+    }
+
+    #HEADLINE654 {
+        top: 17px;
+        left: 43px;
+        padding: 0px;
+        width: 103px;
+        height: 28px;
+    }
+
+    #HEADLINE654 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #SHAPE655 {
+        top: 56px;
+        left: 73px;
+        width: 39px;
+        height: 39px;
+    }
+
+    #HEADLINE656 {
+        top: 102px;
+        left: 41px;
+        padding: 0px;
+        width: 103px;
+        height: 18px;
+    }
+
+    #HEADLINE656 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #HEADLINE590 {
+        top: 58px;
+        left: 0px;
+        padding: 0px;
+        width: 299px;
+        height: 25px;
+    }
+
+    #HEADLINE590 > .widget-content {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    #HEADLINE83 {
+        top: 28px;
+        left: 233px;
+        padding: 0px;
+        width: 606px;
+        height: 46px;
+    }
+
+    #HEADLINE83 > .widget-content {
+        font-size: 40px;
+        text-align: left;
+    }
+
+    #BOX137 {
+        top: 99px;
+        left: 255.5px;
+        width: 227px;
+        height: 374px;
+    }
+
+    #BOX138 {
+        top: 4px;
+        left: 7px;
+        width: 214px;
+        height: 227px;
+    }
+
+    #HEADLINE139 {
+        top: 254px;
+        left: 20px;
+        padding: 0px;
+        width: 195px;
+        height: 40px;
+    }
+
+    #HEADLINE139 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #HEADLINE140 {
+        top: 325px;
+        left: 18px;
+        padding: 0px;
+        width: 52px;
+        height: 25px;
+    }
+
+    #HEADLINE140 > .widget-content {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    #SHAPE141 {
+        top: 327px;
+        left: 43px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #BUTTON892 {
+        top: 339.71875px;
+        left: 125.796875px;
+        padding: 0px;
+        width: 89px;
+        height: 27px;
+    }
+
+    #BUTTON892 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #PARAGRAPH894 {
+        top: 300.71875px;
+        left: 18px;
+        padding: 0px;
+        width: 81px;
+        height: 19px;
+    }
+
+    #PARAGRAPH894 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #BOX96 {
+        top: 99px;
+        left: 22px;
+        width: 227px;
+        height: 374px;
+    }
+
+    #BOX97 {
+        top: 4px;
+        left: 7px;
+        width: 214px;
+        height: 227px;
+    }
+
+    #HEADLINE98 {
+        top: 254px;
+        left: 20px;
+        padding: 0px;
+        width: 195px;
+        height: 40px;
+    }
+
+    #HEADLINE98 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #PARAGRAPH890 {
+        top: 299px;
+        left: 20.625px;
+        padding: 0px;
+        width: 81px;
+        height: 19px;
+    }
+
+    #PARAGRAPH890 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #BUTTON891 {
+        top: 340px;
+        left: 123px;
+        padding: 0px;
+        width: 89px;
+        height: 27px;
+    }
+
+    #BUTTON891 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #HEADLINE889 {
+        top: 325px;
+        left: 19.125px;
+        padding: 0px;
+        width: 32px;
+        height: 25px;
+    }
+
+    #HEADLINE889 > .widget-content {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    #SHAPE103 {
+        top: 327.5px;
+        left: 51.125px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #SHAPE886 {
+        top: 24.688px;
+        left: 180px;
+        width: 41px;
+        height: 41px;
+    }
+
+    #SHAPE887 {
+        top: 34px;
+        left: 709px;
+        width: 41px;
+        height: 41px;
+    }
+
+    #BOX895 {
+        top: 99.7188px;
+        left: 721px;
+        width: 227px;
+        height: 374px;
+    }
+
+    #BOX896 {
+        top: 4px;
+        left: 7px;
+        width: 214px;
+        height: 227px;
+    }
+
+    #HEADLINE897 {
+        top: 254px;
+        left: 20px;
+        padding: 0px;
+        width: 195px;
+        height: 40px;
+    }
+
+    #HEADLINE897 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #HEADLINE898 {
+        top: 325px;
+        left: 18px;
+        padding: 0px;
+        width: 52px;
+        height: 25px;
+    }
+
+    #HEADLINE898 > .widget-content {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    #SHAPE899 {
+        top: 327px;
+        left: 43px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #BUTTON900 {
+        top: 339.719px;
+        left: 125.797px;
+        padding: 0px;
+        width: 89px;
+        height: 27px;
+    }
+
+    #BUTTON900 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #PARAGRAPH901 {
+        top: 300.719px;
+        left: 18px;
+        padding: 0px;
+        width: 81px;
+        height: 19px;
+    }
+
+    #PARAGRAPH901 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #BOX902 {
+        top: 101px;
+        left: 489.5px;
+        width: 227px;
+        height: 374px;
+    }
+
+    #BOX903 {
+        top: 4px;
+        left: 7px;
+        width: 214px;
+        height: 227px;
+    }
+
+    #HEADLINE904 {
+        top: 254px;
+        left: 20px;
+        padding: 0px;
+        width: 195px;
+        height: 40px;
+    }
+
+    #HEADLINE904 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #HEADLINE905 {
+        top: 325px;
+        left: 18px;
+        padding: 0px;
+        width: 52px;
+        height: 25px;
+    }
+
+    #HEADLINE905 > .widget-content {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    #SHAPE906 {
+        top: 327px;
+        left: 43px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #BUTTON907 {
+        top: 339.719px;
+        left: 125.797px;
+        padding: 0px;
+        width: 89px;
+        height: 27px;
+    }
+
+    #BUTTON907 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #PARAGRAPH908 {
+        top: 300.719px;
+        left: 18px;
+        padding: 0px;
+        width: 81px;
+        height: 19px;
+    }
+
+    #PARAGRAPH908 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #BOX948 {
+        top: -0.5px;
+        left: 1px;
+        width: 741px;
+        height: 51px;
+    }
+
+    #HEADLINE949 {
+        top: 13px;
+        left: 24.5px;
+        padding: 0px;
+        width: 684px;
+        height: 32px;
+    }
+
+    #HEADLINE949 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #FORM950 {
+        top: 134.5px;
+        left: 383px;
+        width: 300px;
+        height: 200.796875px;
+    }
+
+    #ITEM_FORM951 {
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 37.828125px;
+    }
+
+    #ITEM_FORM952 {
+        top: 46.744px;
+        left: 0px;
+        width: 300px;
+        height: 37.828125px;
+    }
+
+    #ITEM_FORM953 {
+        top: 88.6634px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #ITEM_FORM954 {
+        top: 134.797px;
+        left: 0px;
+        width: 300px;
+        height: 66px;
+    }
+
+    #BUTTON955 {
+        top: 397.312px;
+        left: 435.5px;
+        padding: 0px;
+        width: 195px;
+        height: 44px;
+    }
+
+    #BUTTON955 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #PARAGRAPH956 {
+        top: 78.5px;
+        left: 120px;
+        padding: 0px;
+        width: 269px;
+        height: 44px;
+    }
+
+    #PARAGRAPH956 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #PARAGRAPH957 {
+        top: 134.5px;
+        left: 123px;
+        padding: 0px;
+        width: 269px;
+        height: 22px;
+    }
+
+    #PARAGRAPH957 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #BOX958 {
+        top: 77.5px;
+        left: 25.5px;
+        width: 88px;
+        height: 88px;
+    }
+
+    #PARAGRAPH959 {
+        top: 72.5px;
+        left: 383px;
+        padding: 0px;
+        width: 269px;
+        height: 44px;
+    }
+
+    #PARAGRAPH959 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #LINEVERTICAL960 {
+        top: 78.7031px;
+        left: 295.5px;
+        width: 25px;
+        height: 373px;
+    }
+
+    #BOX677 {
+        top: 77px;
+        left: 389px;
+        width: 182.09375px;
+        height: 295px;
+    }
+
+    #BOX678 {
+        top: 1px;
+        left: 1px;
+        width: 180.296875px;
+        height: 226px;
+    }
+
+    #HEADLINE680 {
+        top: 240px;
+        left: 10px;
+        padding: 0px;
+        width: 160px;
+        height: 17px;
+    }
+
+    #HEADLINE680 > .widget-content {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #HEADLINE681 {
+        top: 260px;
+        left: 39px;
+        padding: 0px;
+        width: 102px;
+        height: 22px;
+    }
+
+    #HEADLINE681 > .widget-content {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #BOX682 {
+        top: 77px;
+        left: 583px;
+        width: 182.09375px;
+        height: 295px;
+    }
+
+    #BOX683 {
+        top: 1px;
+        left: 1px;
+        width: 180.296875px;
+        height: 226px;
+    }
+
+    #HEADLINE685 {
+        top: 240px;
+        left: 9px;
+        padding: 0px;
+        width: 160px;
+        height: 17px;
+    }
+
+    #HEADLINE685 > .widget-content {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #HEADLINE686 {
+        top: 260px;
+        left: 38px;
+        padding: 0px;
+        width: 102px;
+        height: 22px;
+    }
+
+    #HEADLINE686 > .widget-content {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #BOX702 {
+        top: 77px;
+        left: 778.891px;
+        width: 182.09375px;
+        height: 295px;
+    }
+
+    #BOX703 {
+        top: 1px;
+        left: 1px;
+        width: 180.296875px;
+        height: 226px;
+    }
+
+    #HEADLINE705 {
+        top: 240px;
+        left: 9px;
+        padding: 0px;
+        width: 160px;
+        height: 17px;
+    }
+
+    #HEADLINE705 > .widget-content {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #HEADLINE706 {
+        top: 260px;
+        left: 38px;
+        padding: 0px;
+        width: 102px;
+        height: 22px;
+    }
+
+    #HEADLINE706 > .widget-content {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #BOX707 {
+        top: 77px;
+        left: 194px;
+        width: 182.09375px;
+        height: 295px;
+    }
+
+    #BOX708 {
+        top: 1px;
+        left: 1px;
+        width: 180.296875px;
+        height: 226px;
+    }
+
+    #HEADLINE710 {
+        top: 240px;
+        left: 9px;
+        padding: 0px;
+        width: 160px;
+        height: 17px;
+    }
+
+    #HEADLINE710 > .widget-content {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #HEADLINE711 {
+        top: 260px;
+        left: 38px;
+        padding: 0px;
+        width: 102px;
+        height: 22px;
+    }
+
+    #HEADLINE711 > .widget-content {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #HEADLINE718 {
+        top: 27px;
+        left: 0px;
+        padding: 0px;
+        width: 797px;
+        height: 25px;
+    }
+
+    #HEADLINE718 > .widget-content {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    #BOX719 {
+        top: 77px;
+        left: -1px;
+        width: 182.09375px;
+        height: 295px;
+    }
+
+    #BOX720 {
+        top: 1px;
+        left: 1px;
+        width: 180.296875px;
+        height: 226px;
+    }
+
+    #HEADLINE721 {
+        top: 240px;
+        left: 9px;
+        padding: 0px;
+        width: 160px;
+        height: 17px;
+    }
+
+    #HEADLINE721 > .widget-content {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #HEADLINE722 {
+        top: 260px;
+        left: 38px;
+        padding: 0px;
+        width: 102px;
+        height: 22px;
+    }
+
+    #HEADLINE722 > .widget-content {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #HEADLINE777 {
+        top: 243px;
+        left: 0px;
+        padding: 0px;
+        width: 679px;
+        height: 18px;
+    }
+
+    #HEADLINE777 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #LINE778 {
+        top: 206px;
+        left: 0px;
+        width: 960px;
+        height: 25px;
+    }
+
+    #HEADLINE783 {
+        top: 66.875px;
+        left: 490px;
+        padding: 0px;
+        width: 452px;
+        height: 60px;
+    }
+
+    #HEADLINE783 > .widget-content {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #HEADLINE909 {
+        top: 65.875px;
+        left: 2px;
+        padding: 0px;
+        width: 507px;
+        height: 80px;
+    }
+
+    #HEADLINE909 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+#SECTION764 {
+    display: block;
+    background-image: url("https://static.ladipage.net/s1440x700/5c287a86b0bb7c271ce70c23/1-1549209902.jpg");
+    background-color: rgba(252, 252, 252, 1);
+    background-origin: content-box;
+    background-size: auto 100%;
+    background-attachment: scroll;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+#SECTION764 > .ladi-widget-overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#POPUP970 .container {
+    display: block;
+    background-image: url("https://static.ladipage.net/s1440x700/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+    background-color: rgba(255, 255, 255, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#POPUP970 > .container .overlay-container-popup {
+    background-color: rgba(0, 0, 0, 0.71);
+}
+
+#SECTION821 {
+    display: block;
+    background-image: url("https://static.ladipage.net/s1440x700/5c287a86b0bb7c271ce70c23/1-1549209902.jpg");
+    background-color: rgba(252, 252, 252, 1);
+    background-origin: content-box;
+    background-size: auto 100%;
+    background-attachment: scroll;
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+#SECTION821 > .ladi-widget-overlay {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#POPUP961 .container {
+    display: block;
+    background-image: url("https://static.ladipage.net/s1440x700/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+    background-color: rgba(255, 255, 255, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#POPUP961 > .container .overlay-container-popup {
+    background-color: rgba(0, 0, 0, 0.71);
+}
+
+#SECTION845 {
+    display: block;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#SECTION9 {
+    display: block;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#SECTION925 {
+    display: block;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#SECTION589 {
+    display: block;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#SECTION82 {
+    display: block;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#POPUP947 .container {
+    display: block;
+    background-color: rgba(25, 29, 46, 1);
+}
+
+#SECTION666 {
+    display: block;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+#SECTION776 {
+    display: block;
+    background-color: rgba(31, 33, 41, 1);
+}
+
+#LINE765 {
+    display: block;
+}
+
+#LINE765 > .widget-content .line {
+    border-top-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-style: dashed;
+    border-color: rgba(189, 189, 189, 1);
+    margin-top: 12px;
+}
+
+#LINE765 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BUTTON766 {
+    display: table;
+}
+
+#BUTTON766 > .widget-content {
+    background-color: #f37d8a;
+    color: #ffffff;
+    line-height: 22px;
+    box-shadow: 0px 2px 0px rgba(227, 77, 94, 1);
+}
+
+#BUTTON766 > .widget-content {
+    border-radius: 32px;
+}
+
+#BUTTON766 > .ladi-widget-overlay {
+    border-radius: 32px;
+}
+
+#HEADLINE767 {
+    display: block;
+}
+
+#HEADLINE767 > .widget-content {
+    font-family: Arima Madurai;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #f37d8a;
+    font-weight: 400;
+    line-height: 46px;
+}
+
+#HEADLINE775 {
+    display: block;
+}
+
+#HEADLINE775 > .widget-content {
+    font-family: 'Baloo Bhaina';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(110, 110, 110, 1);
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#BOX810 {
+    display: block;
+}
+
+#BOX810 > .widget-content {
+    background-color: rgba(221, 215, 215, 0.01);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX810 > .widget-content {
+    border-radius: 1px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: rgba(0, 0, 0, 1);
+}
+
+#BOX810 > .ladi-widget-overlay {
+    border-radius: 1px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: rgba(0, 0, 0, 1);
+}
+
+#HEADLINE812 {
+    display: block;
+}
+
+#HEADLINE812 > .widget-content {
+    font-family: "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(158, 158, 158, 1);
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#HEADLINE912 {
+    display: block;
+}
+
+#HEADLINE912 > .widget-content {
+    font-family: "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(158, 158, 158, 1);
+    font-weight: 400;
+    line-height: 16px;
+}
+
+#BOX814 {
+    display: block;
+}
+
+#BOX814 > .widget-content {
+    background-color: rgba(221, 215, 215, 0.01);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX814 > .widget-content {
+    border-radius: 1px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: rgba(0, 0, 0, 1);
+}
+
+#BOX814 > .ladi-widget-overlay {
+    border-radius: 1px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: rgba(0, 0, 0, 1);
+}
+
+#HEADLINE815 {
+    display: block;
+}
+
+#HEADLINE815 > .widget-content {
+    font-family: "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(158, 158, 158, 1);
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#BOX816 {
+    display: block;
+}
+
+#BOX816 > .widget-content {
+    background-color: rgba(221, 215, 215, 0.01);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX816 > .widget-content {
+    border-radius: 1px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: rgba(0, 0, 0, 1);
+}
+
+#BOX816 > .ladi-widget-overlay {
+    border-radius: 1px;
+    border-width: 1px;
+    border-style: dotted;
+    border-color: rgba(0, 0, 0, 1);
+}
+
+#HEADLINE817 {
+    display: block;
+}
+
+#HEADLINE817 > .widget-content {
+    font-family: "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(158, 158, 158, 1);
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#LINE818 {
+    display: block;
+}
+
+#LINE818 > .widget-content .line {
+    border-top-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-style: dashed;
+    border-color: rgba(228, 28, 78, 1);
+    margin-top: 12px;
+}
+
+#LINE818 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#HEADLINE820 {
+    display: block;
+}
+
+#HEADLINE820 > .widget-content {
+    font-family: 'Cormorant Upright', serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #f37d8a;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#BOX971 {
+    display: block;
+}
+
+#BOX971 > .widget-content {
+    background-image: url("https://static.ladipage.net/s700x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#BOX971 > .ladi-widget-overlay {
+    background-color: rgba(219, 0, 66, 0.94);
+}
+
+#HEADLINE972 {
+    display: block;
+}
+
+#HEADLINE972 > .widget-content {
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 300;
+    line-height: 36px;
+}
+
+#PARAGRAPH975 {
+    display: block;
+}
+
+#PARAGRAPH975 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 300;
+    line-height: 24px;
+}
+
+#FORM973 {
+    display: block;
+}
+
+#FORM973 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#FORM973 .widget-content::-webkit-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#FORM973 .widget-content:-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#FORM973 .widget-content::-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#FORM973 .widget-content:-ms-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#FORM973 select.widget-content option:first-child {
+    color: rgba(140, 140, 140, 1)
+}
+
+#FORM973 select.widget-content {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM977 {
+    display: block;
+}
+
+#ITEM_FORM977 > .widget-content {
+    background-color: rgba(235, 235, 235, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#ITEM_FORM977 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(219, 0, 66, 1);
+}
+
+#ITEM_FORM977 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(219, 0, 66, 1);
+}
+
+#ITEM_FORM977 .widget-content::-webkit-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM977 .widget-content:-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM977 .widget-content::-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM977 .widget-content:-ms-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM977 select.widget-content option:first-child {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM977 select.widget-content {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM978 {
+    display: block;
+}
+
+#ITEM_FORM978 > .widget-content {
+    background-color: rgba(235, 235, 235, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#ITEM_FORM978 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(219, 0, 66, 1);
+}
+
+#ITEM_FORM978 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(219, 0, 66, 1);
+}
+
+#ITEM_FORM978 .widget-content::-webkit-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM978 .widget-content:-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM978 .widget-content::-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM978 .widget-content:-ms-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM978 select.widget-content option:first-child {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM978 select.widget-content {
+    color: rgba(140, 140, 140, 1)
+}
+
+#BUTTON976 {
+    display: table;
+}
+
+#BUTTON976 > .widget-content {
+    background-color: rgba(219, 0, 66, 0.94);
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 0px rgba(255, 214, 0, 1);
+}
+
+#BUTTON976 > .widget-content {
+    border-radius: 0px;
+}
+
+#BUTTON976 > .ladi-widget-overlay {
+    border-radius: 0px;
+}
+
+#BUTTON980 {
+    display: table;
+}
+
+#BUTTON980 > .widget-content {
+    background-color: rgba(76, 175, 80, 1);
+    color: #ffffff;
+    line-height: 40px;
+}
+
+#BUTTON980 > .widget-content {
+    border-radius: 5px;
+}
+
+#BUTTON980 > .ladi-widget-overlay {
+    border-radius: 5px;
+}
+
+#HEADLINE824 {
+    display: block;
+}
+
+#HEADLINE824 > .widget-content {
+    font-family: Arima Madurai;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #f37d8a;
+    font-weight: 400;
+    line-height: 46px;
+}
+
+#HEADLINE825 {
+    display: block;
+}
+
+#HEADLINE825 > .widget-content {
+    font-family: 'Baloo Bhaina';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(110, 110, 110, 1);
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#LINE832 {
+    display: block;
+}
+
+#LINE832 > .widget-content .line {
+    border-top-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-style: dashed;
+    border-color: rgba(228, 28, 78, 1);
+    margin-top: 12px;
+}
+
+#LINE832 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#HEADLINE833 {
+    display: block;
+}
+
+#HEADLINE833 > .widget-content {
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #f37d8a;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#LINE834 {
+    display: block;
+}
+
+#LINE834 > .widget-content .line {
+    border-top-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-style: dashed;
+    border-color: rgba(189, 189, 189, 1);
+    margin-top: 12px;
+}
+
+#LINE834 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#HEADLINE837 {
+    display: block;
+}
+
+#HEADLINE837 > .widget-content {
+    font-family: 'Roboto Slab', serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(158, 158, 158, 1);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#SHAPE838 {
+    display: block;
+}
+
+#SHAPE838 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(158, 158, 158, 1);
+}
+
+#SHAPE838 > .widget-content svg {
+    fill: rgba(158, 158, 158, 1);
+}
+
+#SHAPE839 {
+    display: block;
+}
+
+#SHAPE839 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(158, 158, 158, 1);
+}
+
+#SHAPE839 > .widget-content svg {
+    fill: rgba(158, 158, 158, 1);
+}
+
+#SHAPE840 {
+    display: block;
+}
+
+#SHAPE840 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(158, 158, 158, 1);
+}
+
+#SHAPE840 > .widget-content svg {
+    fill: rgba(158, 158, 158, 1);
+}
+
+#HEADLINE842 {
+    display: block;
+}
+
+#HEADLINE842 > .widget-content {
+    font-family: 'Cormorant Upright', serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #f37d8a;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+#BOX962 {
+    display: block;
+}
+
+#BOX962 > .widget-content {
+    background-image: url("https://static.ladipage.net/s700x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#BOX962 > .ladi-widget-overlay {
+    background-color: rgba(219, 0, 66, 0.94);
+}
+
+#HEADLINE963 {
+    display: block;
+}
+
+#HEADLINE963 > .widget-content {
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 300;
+    line-height: 36px;
+}
+
+#PARAGRAPH964 {
+    display: block;
+}
+
+#PARAGRAPH964 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Montserrat', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 300;
+    line-height: 24px;
+}
+
+#FORM965 {
+    display: block;
+}
+
+#FORM965 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#FORM965 .widget-content::-webkit-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#FORM965 .widget-content:-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#FORM965 .widget-content::-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#FORM965 .widget-content:-ms-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#FORM965 select.widget-content option:first-child {
+    color: rgba(140, 140, 140, 1)
+}
+
+#FORM965 select.widget-content {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM966 {
+    display: block;
+}
+
+#ITEM_FORM966 > .widget-content {
+    background-color: rgba(235, 235, 235, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#ITEM_FORM966 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(219, 0, 66, 1);
+}
+
+#ITEM_FORM966 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(219, 0, 66, 1);
+}
+
+#ITEM_FORM966 .widget-content::-webkit-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM966 .widget-content:-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM966 .widget-content::-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM966 .widget-content:-ms-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM966 select.widget-content option:first-child {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM966 select.widget-content {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM967 {
+    display: block;
+}
+
+#ITEM_FORM967 > .widget-content {
+    background-color: rgba(235, 235, 235, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#ITEM_FORM967 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(219, 0, 66, 1);
+}
+
+#ITEM_FORM967 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(219, 0, 66, 1);
+}
+
+#ITEM_FORM967 .widget-content::-webkit-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM967 .widget-content:-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM967 .widget-content::-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM967 .widget-content:-ms-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM967 select.widget-content option:first-child {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM967 select.widget-content {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM968 {
+    display: block;
+}
+
+#ITEM_FORM968 > .widget-content {
+    background-color: rgba(235, 235, 235, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#ITEM_FORM968 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(219, 0, 66, 1);
+}
+
+#ITEM_FORM968 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(219, 0, 66, 1);
+}
+
+#ITEM_FORM968 .widget-content::-webkit-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM968 .widget-content:-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM968 .widget-content::-moz-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM968 .widget-content:-ms-input-placeholder {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM968 select.widget-content option:first-child {
+    color: rgba(140, 140, 140, 1)
+}
+
+#ITEM_FORM968 select.widget-content {
+    color: rgba(140, 140, 140, 1)
+}
+
+#BUTTON969 {
+    display: table;
+}
+
+#BUTTON969 > .widget-content {
+    background-color: rgba(219, 0, 66, 0.94);
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #ffffff;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 1px;
+    box-shadow: 0px 2px 0px rgba(255, 214, 0, 1);
+}
+
+#BUTTON969 > .widget-content {
+    border-radius: 0px;
+}
+
+#BUTTON969 > .ladi-widget-overlay {
+    border-radius: 0px;
+}
+
+#HEADLINE846 {
+    display: block;
+}
+
+#HEADLINE846 > .widget-content {
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(112, 105, 105, 1);
+    font-weight: 400;
+    line-height: 22px;
+}
+
+#IMAGE848 {
+    display: block;
+}
+
+#IMAGE848 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#IMAGE848 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0)
+}
+
+#BOX849 {
+    display: block;
+}
+
+#BOX849 > .widget-content {
+    background-color: rgba(28, 68, 97, 0.71);
+    color: rgba(0, 0, 0, 1);
+}
+
+#HEADLINE850 {
+    display: block;
+}
+
+#HEADLINE850 > .widget-content {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    line-height: 20px;
+}
+
+#SHAPE851 {
+    display: block;
+}
+
+#SHAPE851 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 128, 171, 1);
+}
+
+#SHAPE851 > .widget-content svg {
+    fill: rgba(255, 128, 171, 1);
+}
+
+#IMAGE852 {
+    display: block;
+}
+
+#IMAGE852 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#IMAGE852 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0)
+}
+
+#BOX853 {
+    display: block;
+}
+
+#BOX853 > .widget-content {
+    background-color: rgba(28, 68, 97, 0.71);
+    color: rgba(0, 0, 0, 1);
+}
+
+#HEADLINE854 {
+    display: block;
+}
+
+#HEADLINE854 > .widget-content {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    line-height: 20px;
+}
+
+#SHAPE855 {
+    display: block;
+}
+
+#SHAPE855 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 128, 171, 1);
+}
+
+#SHAPE855 > .widget-content svg {
+    fill: rgba(255, 128, 171, 1);
+}
+
+#IMAGE856 {
+    display: block;
+}
+
+#IMAGE856 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#IMAGE856 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0)
+}
+
+#BOX857 {
+    display: block;
+}
+
+#BOX857 > .widget-content {
+    background-color: rgba(28, 68, 97, 0.71);
+    color: rgba(0, 0, 0, 1);
+}
+
+#HEADLINE858 {
+    display: block;
+}
+
+#HEADLINE858 > .widget-content {
+    color: rgba(255, 255, 255, 1);
+    font-weight: 700;
+    line-height: 20px;
+}
+
+#SHAPE859 {
+    display: block;
+}
+
+#SHAPE859 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 128, 171, 1);
+}
+
+#SHAPE859 > .widget-content svg {
+    fill: rgba(255, 128, 171, 1);
+}
+
+#HEADLINE860 {
+    display: block;
+}
+
+#HEADLINE860 > .widget-content {
+    font-family: 'Baloo Bhaina';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(110, 110, 110, 1);
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#HEADLINE996 {
+    display: block;
+}
+
+#HEADLINE996 > .widget-content {
+    font-family: 'Baloo Bhaina';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(110, 110, 110, 1);
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#IMAGE997 {
+    display: block;
+}
+
+#IMAGE997 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#IMAGE997 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0)
+}
+
+#HEADLINE998 {
+    display: block;
+}
+
+#HEADLINE998 > .widget-content {
+    font-family: 'Baloo Bhaina', cursive;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 128, 171, 1);
+    font-weight: 400;
+    line-height: 46px;
+}
+
+#BOX27 {
+    display: block;
+}
+
+#BOX27 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX27 > .widget-content {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#BOX27 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#HEADLINE15 {
+    display: block;
+}
+
+#HEADLINE15 > .widget-content {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#PARAGRAPH16 {
+    display: block;
+}
+
+#PARAGRAPH16 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#SHAPE28 {
+    display: block;
+}
+
+#SHAPE28 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(115, 115, 115, 1);
+}
+
+#SHAPE28 > .widget-content svg {
+    fill: rgba(115, 115, 115, 1);
+}
+
+#BOX41 {
+    display: block;
+}
+
+#BOX41 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX41 > .widget-content {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#BOX41 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#HEADLINE42 {
+    display: block;
+}
+
+#HEADLINE42 > .widget-content {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#PARAGRAPH43 {
+    display: block;
+}
+
+#PARAGRAPH43 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#SHAPE44 {
+    display: block;
+}
+
+#SHAPE44 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(115, 115, 115, 1);
+}
+
+#SHAPE44 > .widget-content svg {
+    fill: rgba(115, 115, 115, 1);
+}
+
+#BOX37 {
+    display: block;
+}
+
+#BOX37 > .widget-content {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX37 > .widget-content {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#BOX37 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#HEADLINE38 {
+    display: block;
+}
+
+#HEADLINE38 > .widget-content {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#PARAGRAPH39 {
+    display: block;
+}
+
+#PARAGRAPH39 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#SHAPE40 {
+    display: block;
+}
+
+#SHAPE40 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(115, 115, 115, 1);
+}
+
+#SHAPE40 > .widget-content svg {
+    fill: rgba(115, 115, 115, 1);
+}
+
+#BOX926 {
+    display: block;
+}
+
+#BOX926 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX926 > .widget-content {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#BOX926 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#HEADLINE927 {
+    display: block;
+}
+
+#HEADLINE927 > .widget-content {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#PARAGRAPH928 {
+    display: block;
+}
+
+#PARAGRAPH928 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#SHAPE929 {
+    display: block;
+}
+
+#SHAPE929 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(115, 115, 115, 1);
+}
+
+#SHAPE929 > .widget-content svg {
+    fill: rgba(115, 115, 115, 1);
+}
+
+#BOX930 {
+    display: block;
+}
+
+#BOX930 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX930 > .widget-content {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#BOX930 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#HEADLINE931 {
+    display: block;
+}
+
+#HEADLINE931 > .widget-content {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#PARAGRAPH932 {
+    display: block;
+}
+
+#PARAGRAPH932 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#SHAPE933 {
+    display: block;
+}
+
+#SHAPE933 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(115, 115, 115, 1);
+}
+
+#SHAPE933 > .widget-content svg {
+    fill: rgba(115, 115, 115, 1);
+}
+
+#BOX934 {
+    display: block;
+}
+
+#BOX934 > .widget-content {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX934 > .widget-content {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#BOX934 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: dashed;
+}
+
+#HEADLINE935 {
+    display: block;
+}
+
+#HEADLINE935 > .widget-content {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#PARAGRAPH936 {
+    display: block;
+}
+
+#PARAGRAPH936 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#SHAPE937 {
+    display: block;
+}
+
+#SHAPE937 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(115, 115, 115, 1);
+}
+
+#SHAPE937 > .widget-content svg {
+    fill: rgba(115, 115, 115, 1);
+}
+
+#BOX657 {
+    display: block;
+}
+
+#BOX657 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX657 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(207, 207, 207, 1);
+}
+
+#BOX657 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(207, 207, 207, 1);
+}
+
+#HEADLINE658 {
+    display: block;
+}
+
+#HEADLINE658 > .widget-content {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(89, 87, 87, 1);
+    font-weight: 700;
+    line-height: 28px;
+}
+
+#SHAPE659 {
+    display: block;
+}
+
+#SHAPE659 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(168, 163, 163, 1);
+}
+
+#SHAPE659 > .widget-content svg {
+    fill: rgba(168, 163, 163, 1);
+}
+
+#HEADLINE660 {
+    display: block;
+}
+
+#HEADLINE660 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 1 rgba(115, 115, 115, 1) 15, 1);
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#BOX612 {
+    display: block;
+}
+
+#BOX612 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX612 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(207, 207, 207, 1);
+}
+
+#BOX612 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(207, 207, 207, 1);
+}
+
+#HEADLINE595 {
+    display: block;
+}
+
+#HEADLINE595 > .widget-content {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(89, 87, 87, 1);
+    font-weight: 700;
+    line-height: 28px;
+}
+
+#SHAPE593 {
+    display: block;
+}
+
+#SHAPE593 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(168, 163, 163, 1);
+}
+
+#SHAPE593 > .widget-content svg {
+    fill: rgba(168, 163, 163, 1);
+}
+
+#HEADLINE594 {
+    display: block;
+}
+
+#HEADLINE594 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 1 rgba(115, 115, 115, 1) 15, 1);
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#BOX645 {
+    display: block;
+}
+
+#BOX645 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX645 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(207, 207, 207, 1);
+}
+
+#BOX645 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(207, 207, 207, 1);
+}
+
+#HEADLINE646 {
+    display: block;
+}
+
+#HEADLINE646 > .widget-content {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(89, 87, 87, 1);
+    font-weight: 700;
+    line-height: 28px;
+}
+
+#SHAPE647 {
+    display: block;
+}
+
+#SHAPE647 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(168, 163, 163, 1);
+}
+
+#SHAPE647 > .widget-content svg {
+    fill: rgba(168, 163, 163, 1);
+}
+
+#HEADLINE648 {
+    display: block;
+}
+
+#HEADLINE648 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 1 rgba(115, 115, 115, 1) 15, 1);
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#BOX649 {
+    display: block;
+}
+
+#BOX649 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX649 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(207, 207, 207, 1);
+}
+
+#BOX649 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(207, 207, 207, 1);
+}
+
+#HEADLINE650 {
+    display: block;
+}
+
+#HEADLINE650 > .widget-content {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(89, 87, 87, 1);
+    font-weight: 700;
+    line-height: 28px;
+}
+
+#SHAPE651 {
+    display: block;
+}
+
+#SHAPE651 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(168, 163, 163, 1);
+}
+
+#SHAPE651 > .widget-content svg {
+    fill: rgba(168, 163, 163, 1);
+}
+
+#HEADLINE652 {
+    display: block;
+}
+
+#HEADLINE652 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 1 rgba(115, 115, 115, 1) 15, 1);
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#BOX653 {
+    display: block;
+}
+
+#BOX653 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX653 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(207, 207, 207, 1);
+}
+
+#BOX653 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(207, 207, 207, 1);
+}
+
+#HEADLINE654 {
+    display: block;
+}
+
+#HEADLINE654 > .widget-content {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(89, 87, 87, 1);
+    font-weight: 700;
+    line-height: 28px;
+}
+
+#SHAPE655 {
+    display: block;
+}
+
+#SHAPE655 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(168, 163, 163, 1);
+}
+
+#SHAPE655 > .widget-content svg {
+    fill: rgba(168, 163, 163, 1);
+}
+
+#HEADLINE656 {
+    display: block;
+}
+
+#HEADLINE656 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 1 rgba(115, 115, 115, 1) 15, 1);
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#HEADLINE590 {
+    display: block;
+}
+
+#HEADLINE590 > .widget-content {
+    opacity: 1;
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 700;
+    line-height: 25px;
+}
+
+#HEADLINE83 {
+    display: block;
+}
+
+#HEADLINE83 > .widget-content {
+    font-family: 'Baloo Bhaina', cursive;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 128, 171, 1);
+    font-weight: 400;
+    line-height: 46px;
+}
+
+#BOX137 {
+    display: block;
+}
+
+#BOX137 > .widget-content {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX137 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(235, 235, 235, 1);
+}
+
+#BOX137 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(235, 235, 235, 1);
+}
+
+#BOX138 {
+    display: block;
+}
+
+#BOX138 > .widget-content {
+    background-image: url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgba(189, 189, 189, 1);
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#BOX138 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#HEADLINE139 {
+    display: block;
+}
+
+#HEADLINE139 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#HEADLINE140 {
+    display: block;
+}
+
+#HEADLINE140 > .widget-content {
+    color: rgba(0, 194, 54, 1);
+    font-weight: 700;
+    line-height: 25px;
+}
+
+#SHAPE141 {
+    display: block;
+}
+
+#SHAPE141 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fdc735;
+}
+
+#SHAPE141 > .widget-content svg {
+    fill: #fdc735;
+}
+
+#BUTTON892 {
+    display: table;
+}
+
+#BUTTON892 > .widget-content {
+    background-color: #f37d8a;
+    color: #ffffff;
+    line-height: 22px;
+    box-shadow: 0px 2px 0px rgba(227, 77, 94, 1);
+}
+
+#BUTTON892 > .widget-content {
+    border-radius: 32px;
+}
+
+#BUTTON892 > .ladi-widget-overlay {
+    border-radius: 32px;
+}
+
+#PARAGRAPH894 {
+    display: block;
+}
+
+#PARAGRAPH894 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    line-height: 19px;
+}
+
+#BOX96 {
+    display: block;
+}
+
+#BOX96 > .widget-content {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX96 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(235, 235, 235, 1);
+}
+
+#BOX96 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(235, 235, 235, 1);
+}
+
+#BOX97 {
+    display: block;
+}
+
+#BOX97 > .widget-content {
+    background-image: url("https://static.ladipage.net/s450x450/uploads/images/717ee541-fc11-4dbd-8141-f2107eff351f.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgba(189, 189, 189, 1);
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#BOX97 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#HEADLINE98 {
+    display: block;
+}
+
+#HEADLINE98 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#PARAGRAPH890 {
+    display: block;
+}
+
+#PARAGRAPH890 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    line-height: 19px;
+}
+
+#BUTTON891 {
+    display: table;
+}
+
+#BUTTON891 > .widget-content {
+    background-color: #f37d8a;
+    color: #ffffff;
+    line-height: 22px;
+    box-shadow: 0px 2px 0px rgba(227, 77, 94, 1);
+}
+
+#BUTTON891 > .widget-content {
+    border-radius: 32px;
+}
+
+#BUTTON891 > .ladi-widget-overlay {
+    border-radius: 32px;
+}
+
+#HEADLINE889 {
+    display: block;
+}
+
+#HEADLINE889 > .widget-content {
+    color: rgba(0, 194, 54, 1);
+    font-weight: 700;
+    line-height: 25px;
+}
+
+#SHAPE103 {
+    display: block;
+}
+
+#SHAPE103 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fdc735;
+}
+
+#SHAPE103 > .widget-content svg {
+    fill: #fdc735;
+}
+
+#SHAPE886 {
+    display: block;
+}
+
+#SHAPE886 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 128, 171, 1);
+}
+
+#SHAPE886 > .widget-content svg {
+    fill: rgba(255, 128, 171, 1);
+}
+
+#SHAPE887 {
+    display: block;
+}
+
+#SHAPE887 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(255, 128, 171, 1);
+}
+
+#SHAPE887 > .widget-content svg {
+    fill: rgba(255, 128, 171, 1);
+}
+
+#BOX895 {
+    display: block;
+}
+
+#BOX895 > .widget-content {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX895 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(235, 235, 235, 1);
+}
+
+#BOX895 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(235, 235, 235, 1);
+}
+
+#BOX896 {
+    display: block;
+}
+
+#BOX896 > .widget-content {
+    background-image: url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgba(189, 189, 189, 1);
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#BOX896 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#HEADLINE897 {
+    display: block;
+}
+
+#HEADLINE897 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#HEADLINE898 {
+    display: block;
+}
+
+#HEADLINE898 > .widget-content {
+    color: rgba(0, 194, 54, 1);
+    font-weight: 700;
+    line-height: 25px;
+}
+
+#SHAPE899 {
+    display: block;
+}
+
+#SHAPE899 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fdc735;
+}
+
+#SHAPE899 > .widget-content svg {
+    fill: #fdc735;
+}
+
+#BUTTON900 {
+    display: table;
+}
+
+#BUTTON900 > .widget-content {
+    background-color: #f37d8a;
+    color: #ffffff;
+    line-height: 22px;
+    box-shadow: 0px 2px 0px rgba(227, 77, 94, 1);
+}
+
+#BUTTON900 > .widget-content {
+    border-radius: 32px;
+}
+
+#BUTTON900 > .ladi-widget-overlay {
+    border-radius: 32px;
+}
+
+#PARAGRAPH901 {
+    display: block;
+}
+
+#PARAGRAPH901 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    line-height: 19px;
+}
+
+#BOX902 {
+    display: block;
+}
+
+#BOX902 > .widget-content {
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX902 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(235, 235, 235, 1);
+}
+
+#BOX902 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(235, 235, 235, 1);
+}
+
+#BOX903 {
+    display: block;
+}
+
+#BOX903 > .widget-content {
+    background-image: url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgba(189, 189, 189, 1);
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#BOX903 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#HEADLINE904 {
+    display: block;
+}
+
+#HEADLINE904 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#HEADLINE905 {
+    display: block;
+}
+
+#HEADLINE905 > .widget-content {
+    color: rgba(0, 194, 54, 1);
+    font-weight: 700;
+    line-height: 25px;
+}
+
+#SHAPE906 {
+    display: block;
+}
+
+#SHAPE906 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: #fdc735;
+}
+
+#SHAPE906 > .widget-content svg {
+    fill: #fdc735;
+}
+
+#BUTTON907 {
+    display: table;
+}
+
+#BUTTON907 > .widget-content {
+    background-color: #f37d8a;
+    color: #ffffff;
+    line-height: 22px;
+    box-shadow: 0px 2px 0px rgba(227, 77, 94, 1);
+}
+
+#BUTTON907 > .widget-content {
+    border-radius: 32px;
+}
+
+#BUTTON907 > .ladi-widget-overlay {
+    border-radius: 32px;
+}
+
+#PARAGRAPH908 {
+    display: block;
+}
+
+#PARAGRAPH908 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+    font-weight: 400;
+    line-height: 19px;
+}
+
+#BOX948 {
+    display: block;
+}
+
+#BOX948 > .widget-content {
+    background-image: url("https://static.ladipage.net/s950x300/57b167c9ca57d39c18a1c57c/coffee-notebook-pencil-work-desk-163131.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-color: rgba(201, 72, 0, 0.8);
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+#BOX948 > .ladi-widget-overlay {
+    background-color: rgba(201, 60, 0, 0.88);
+}
+
+#HEADLINE949 {
+    display: block;
+}
+
+#HEADLINE949 > .widget-content {
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 300;
+    line-height: 32px;
+}
+
+#FORM950 {
+    display: block;
+}
+
+#FORM950 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#FORM950 .widget-content::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#FORM950 .widget-content:-moz-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#FORM950 .widget-content::-moz-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#FORM950 .widget-content:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#FORM950 select.widget-content option:first-child {
+    color: rgba(255, 255, 255, 1)
+}
+
+#FORM950 select.widget-content {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM951 {
+    display: block;
+}
+
+#ITEM_FORM951 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#ITEM_FORM951 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+}
+
+#ITEM_FORM951 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+}
+
+#ITEM_FORM951 .widget-content::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM951 .widget-content:-moz-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM951 .widget-content::-moz-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM951 .widget-content:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM951 select.widget-content option:first-child {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM951 select.widget-content {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM952 {
+    display: block;
+}
+
+#ITEM_FORM952 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#ITEM_FORM952 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+}
+
+#ITEM_FORM952 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #eee;
+}
+
+#ITEM_FORM952 .widget-content::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM952 .widget-content:-moz-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM952 .widget-content::-moz-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM952 .widget-content:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM952 select.widget-content option:first-child {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM952 select.widget-content {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM953 {
+    display: block;
+}
+
+#ITEM_FORM953 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#ITEM_FORM953 .widget-content::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM953 .widget-content:-moz-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM953 .widget-content::-moz-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM953 .widget-content:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM953 select.widget-content option:first-child {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM953 select.widget-content {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM954 {
+    display: block;
+}
+
+#ITEM_FORM954 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#ITEM_FORM954 .widget-content::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM954 .widget-content:-moz-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM954 .widget-content::-moz-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM954 .widget-content:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM954 select.widget-content option:first-child {
+    color: rgba(255, 255, 255, 1)
+}
+
+#ITEM_FORM954 select.widget-content {
+    color: rgba(255, 255, 255, 1)
+}
+
+#BUTTON955 {
+    display: table;
+}
+
+#BUTTON955 > .widget-content {
+    background-color: rgba(201, 60, 0, 1);
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: #ffffff;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+#BUTTON955 > .widget-content {
+    border-radius: 0px;
+}
+
+#BUTTON955 > .ladi-widget-overlay {
+    border-radius: 0px;
+}
+
+#PARAGRAPH956 {
+    display: block;
+}
+
+#PARAGRAPH956 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    line-height: 22px;
+}
+
+#PARAGRAPH957 {
+    display: block;
+}
+
+#PARAGRAPH957 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    text-decoration: underline;
+    -webkit-text-decoration-line: underline;
+    line-height: 22px;
+}
+
+#BOX958 {
+    display: block;
+}
+
+#BOX958 > .widget-content {
+    background-color: rgba(189, 189, 189, 1);
+    color: rgba(0, 0, 0, 1);
+}
+
+#PARAGRAPH959 {
+    display: block;
+}
+
+#PARAGRAPH959 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    line-height: 22px;
+}
+
+#LINEVERTICAL960 {
+    display: block;
+}
+
+#LINEVERTICAL960 > .widget-content .linevertical {
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 1px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 1);
+    margin-left: 12px;
+}
+
+#LINEVERTICAL960 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX677 {
+    display: block;
+}
+
+#BOX677 > .widget-content {
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX677 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(222, 222, 222, 1);
+}
+
+#BOX677 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(222, 222, 222, 1);
+}
+
+#BOX678 {
+    display: block;
+}
+
+#BOX678 > .widget-content {
+    background-image: url("https://static.ladipage.net/s400x450/uploads/images/5317e86c-14c0-4ff0-8c1b-412531074c89.png");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#BOX678 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#HEADLINE680 {
+    display: block;
+}
+
+#HEADLINE680 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(71, 71, 71, 1);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#HEADLINE681 {
+    display: block;
+}
+
+#HEADLINE681 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(3, 161, 28, 1);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#BOX682 {
+    display: block;
+}
+
+#BOX682 > .widget-content {
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX682 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(222, 222, 222, 1);
+}
+
+#BOX682 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(222, 222, 222, 1);
+}
+
+#BOX683 {
+    display: block;
+}
+
+#BOX683 > .widget-content {
+    background-image: url("https://static.ladipage.net/s400x450/uploads/images/aad0bc08-0889-46ef-a1c5-9d54d7113167.png");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#BOX683 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#HEADLINE685 {
+    display: block;
+}
+
+#HEADLINE685 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(71, 71, 71, 1);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#HEADLINE686 {
+    display: block;
+}
+
+#HEADLINE686 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(3, 161, 28, 1);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#BOX702 {
+    display: block;
+}
+
+#BOX702 > .widget-content {
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX702 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(222, 222, 222, 1);
+}
+
+#BOX702 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(222, 222, 222, 1);
+}
+
+#BOX703 {
+    display: block;
+}
+
+#BOX703 > .widget-content {
+    background-image: url("https://static.ladipage.net/s400x450/uploads/images/e4d758c4-1ac6-4187-b383-62c3b0bae4d6.png");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#BOX703 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#HEADLINE705 {
+    display: block;
+}
+
+#HEADLINE705 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(71, 71, 71, 1);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#HEADLINE706 {
+    display: block;
+}
+
+#HEADLINE706 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(3, 161, 28, 1);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#BOX707 {
+    display: block;
+}
+
+#BOX707 > .widget-content {
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX707 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(222, 222, 222, 1);
+}
+
+#BOX707 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(222, 222, 222, 1);
+}
+
+#BOX708 {
+    display: block;
+}
+
+#BOX708 > .widget-content {
+    background-image: url("https://static.ladipage.net/s400x450/uploads/images/6ab989fe-2d95-4cd9-8574-1abe0377eac0.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgba(189, 189, 189, 1);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#BOX708 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#HEADLINE710 {
+    display: block;
+}
+
+#HEADLINE710 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(71, 71, 71, 1);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#HEADLINE711 {
+    display: block;
+}
+
+#HEADLINE711 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(3, 161, 28, 1);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#HEADLINE718 {
+    display: block;
+}
+
+#HEADLINE718 > .widget-content {
+    opacity: 1;
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(115, 115, 115, 1);
+    font-weight: 700;
+    line-height: 25px;
+}
+
+#BOX719 {
+    display: block;
+}
+
+#BOX719 > .widget-content {
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+}
+
+#BOX719 > .widget-content {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(222, 222, 222, 1);
+}
+
+#BOX719 > .ladi-widget-overlay {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(222, 222, 222, 1);
+}
+
+#BOX720 {
+    display: block;
+}
+
+#BOX720 > .widget-content {
+    background-image: url("https://static.ladipage.net/s400x450/uploads/images/412fd665-a754-45f6-b865-25ba8bb425cb.jpg");
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: rgba(189, 189, 189, 1);
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+    background-origin: content-box;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#BOX720 > .ladi-widget-overlay {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#HEADLINE721 {
+    display: block;
+}
+
+#HEADLINE721 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(71, 71, 71, 1);
+    font-weight: 400;
+    line-height: 17px;
+}
+
+#HEADLINE722 {
+    display: block;
+}
+
+#HEADLINE722 > .widget-content {
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(3, 161, 28, 1);
+    font-weight: 700;
+    line-height: 22px;
+}
+
+#HEADLINE777 {
+    display: block;
+}
+
+#HEADLINE777 > .widget-content {
+    opacity: 1;
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    line-height: 18px;
+}
+
+#LINE778 {
+    display: block;
+}
+
+#LINE778 > .widget-content .line {
+    border-top-width: 1px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.18);
+    margin-top: 12px;
+}
+
+#LINE778 > .widget-content {
+    background-color: rgba(255, 255, 255, 0);
+    opacity: 1;
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(0, 0, 0, 1);
+}
+
+#HEADLINE783 {
+    display: block;
+}
+
+#HEADLINE783 > .widget-content {
+    opacity: 1;
+    font-family: 'Open Sans';
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#HEADLINE909 {
+    display: block;
+}
+
+#HEADLINE909 > .widget-content {
+    font-family: "Open Sans", sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+@media (max-width: 767px) {
+    body {
+        position: relative;
+    }
+
+    .body-fixed {
+        position: fixed;
+        width: 100%;
+    }
+
+    #SECTION764 {
+        display: block;
+        background-image: url("https://static.ladipage.net/s600x750/5c287a86b0bb7c271ce70c23/1-1549209902.jpg");
+        background-color: rgba(252, 252, 252, 1);
+        background-origin: content-box;
+        background-size: auto 100%;
+        background-attachment: scroll;
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
+    #SECTION764 > .ladi-widget-overlay {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    #SECTION764 {
+        width: 375px;
+        height: 526px;
+    }
+
+    #SECTION764 {
+        background-image: url("https://static.ladipage.net/s600x750/5c287a86b0bb7c271ce70c23/1-1549209902.jpg");
+        background-origin: content-box;
+        background-size: auto 100%;
+        background-attachment: scroll;
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
+    #POPUP970 .container {
+        display: block;
+        background-image: url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-color: rgba(255, 255, 255, 1);
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #POPUP970 > .container .overlay-container-popup {
+        background-color: rgba(0, 0, 0, 0.71);
+    }
+
+    #POPUP970 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #POPUP970 .container {
+        width: 375px !important;
+        height: 500px;
+        top: calc(100% - 500px);
+    }
+
+    #POPUP970 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-image: -o-linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #SECTION821 {
+        display: block;
+        background-image: url("https://static.ladipage.net/s600x750/5c287a86b0bb7c271ce70c23/1-1549209902.jpg");
+        background-color: rgba(252, 252, 252, 1);
+        background-origin: content-box;
+        background-size: auto 100%;
+        background-attachment: scroll;
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
+    #SECTION821 > .ladi-widget-overlay {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    #SECTION821 {
+        width: 375px;
+        height: 527px;
+    }
+
+    #SECTION821 {
+        background-image: url("https://static.ladipage.net/s600x750/5c287a86b0bb7c271ce70c23/1-1549209902.jpg");
+        background-origin: content-box;
+        background-size: auto 100%;
+        background-attachment: scroll;
+        background-position: top right;
+        background-repeat: no-repeat;
+    }
+
+    #POPUP961 .container {
+        display: block;
+        background-image: url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-color: rgba(255, 255, 255, 1);
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #POPUP961 > .container .overlay-container-popup {
+        background-color: rgba(0, 0, 0, 0.71);
+    }
+
+    #POPUP961 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #POPUP961 .container {
+        width: 375px !important;
+        height: 500px;
+        top: calc(100% - 500px);
+    }
+
+    #POPUP961 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-image: -o-linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.71)), url("https://static.ladipage.net/s600x550/57b167c9ca57d39c18a1c57c/smile-ok.jpeg");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #SECTION845 {
+        display: block;
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    #SECTION845 {
+        width: 375px;
+        height: 1354px;
+    }
+
+    #SECTION845 {
+        background-image: none;
+    }
+
+    #SECTION9 {
+        display: block;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    #SECTION9 {
+        width: 375px;
+        height: 525px;
+    }
+
+    #SECTION9 {
+        background-image: none;
+    }
+
+    #SECTION925 {
+        display: block;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    #SECTION925 {
+        width: 375px;
+        height: 540px;
+    }
+
+    #SECTION925 {
+        background-image: none;
+    }
+
+    #SECTION589 {
+        display: block;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    #SECTION589 {
+        width: 375px;
+        height: 790px;
+    }
+
+    #SECTION589 {
+        background-image: none;
+    }
+
+    #SECTION82 {
+        display: block;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    #SECTION82 {
+        width: 375px;
+        height: 1549px;
+    }
+
+    #SECTION82 {
+        background-image: none;
+    }
+
+    #POPUP947 .container {
+        display: block;
+        background-color: rgba(25, 29, 46, 1);
+    }
+
+    #POPUP947 {
+        width: 100%;
+        height: 100%;
+    }
+
+    #POPUP947 .container {
+        width: 375px !important;
+        height: 500px;
+        top: calc(100% - 500px);
+    }
+
+    #POPUP947 {
+        background-image: none;
+    }
+
+    #SECTION666 {
+        display: block;
+        background-color: rgba(255, 255, 255, 1);
+    }
+
+    #SECTION666 {
+        width: 375px;
+        height: 1656px;
+    }
+
+    #SECTION666 {
+        background-image: none;
+    }
+
+    #SECTION776 {
+        display: block;
+        background-color: rgba(31, 33, 41, 1);
+    }
+
+    #SECTION776 {
+        width: 375px;
+        height: 501px;
+    }
+
+    #SECTION776 {
+        background-image: none;
+    }
+
+    #LINE765 {
+        top: 80px;
+        left: 130.501px;
+        width: 236px;
+        height: 25px;
+    }
+
+    #BUTTON766 {
+        top: 362px;
+        left: 201.5px;
+        padding: 0px;
+        width: 148px;
+        height: 29px;
+    }
+
+    #BUTTON766 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #HEADLINE767 {
+        top: 43px;
+        left: 87px;
+        padding: 0px;
+        width: 323px;
+        height: 49px;
+    }
+
+    #HEADLINE767 > .widget-content {
+        font-size: 30px;
+        text-align: center;
+        line-height: 49px;
+    }
+
+    #HEADLINE775 {
+        top: 22px;
+        left: 86px;
+        padding: 0px;
+        width: 290px;
+        height: 27px;
+    }
+
+    #HEADLINE775 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+        line-height: 27px;
+    }
+
+    #BOX810 {
+        top: 120px;
+        left: 199.515px;
+        width: 157px;
+        height: 45px;
+    }
+
+    #HEADLINE812 {
+        top: 3px;
+        left: 6.5px;
+        padding: 0px;
+        width: 102px;
+        height: 36px;
+    }
+
+    #HEADLINE812 > .widget-content {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #HEADLINE912 {
+        top: 164px;
+        left: 3.5px;
+        padding: 0px;
+        width: 153.5px;
+        height: 48px;
+    }
+
+    #HEADLINE912 > .widget-content {
+        font-size: 10px;
+        text-align: left;
+    }
+
+    #BOX814 {
+        top: 173px;
+        left: 200.5px;
+        width: 156px;
+        height: 47px;
+    }
+
+    #HEADLINE815 {
+        top: 14.5938px;
+        left: 7px;
+        padding: 0px;
+        width: 200px;
+        height: 18px;
+    }
+
+    #HEADLINE815 > .widget-content {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #BOX816 {
+        top: 229px;
+        left: 199.5px;
+        width: 157px;
+        height: 47px;
+    }
+
+    #HEADLINE817 {
+        top: 5.50005px;
+        left: 9px;
+        padding: 0px;
+        width: 133px;
+        height: 36px;
+    }
+
+    #HEADLINE817 > .widget-content {
+        font-size: 12px;
+        text-align: left;
+    }
+
+    #LINE818 {
+        top: 445px;
+        left: 8.5px;
+        width: 344px;
+        height: 25px;
+    }
+
+    #HEADLINE820 {
+        top: 463px;
+        left: 13.5px;
+        padding: 0px;
+        width: 316px;
+        height: 48px;
+    }
+
+    #HEADLINE820 > .widget-content {
+        font-size: 20px;
+        text-align: left;
+        line-height: 24px;
+    }
+
+    #BOX971 {
+        top: 20px;
+        left: 10px;
+        width: 355px;
+        height: 92px;
+    }
+
+    #BOX971 > .widget-content {
+        background-image: linear-gradient(rgba(219, 0, 66, 0.94), rgba(219, 0, 66, 0.94)), url("https://static.ladipage.net/s600x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+        background-image: -o-linear-gradient(rgba(219, 0, 66, 0.94), rgba(219, 0, 66, 0.94)), url("https://static.ladipage.net/s600x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+        background-image: -ms-linear-gradient(rgba(219, 0, 66, 0.94), rgba(219, 0, 66, 0.94)), url("https://static.ladipage.net/s600x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+        background-image: -moz-linear-gradient(rgba(219, 0, 66, 0.94), rgba(219, 0, 66, 0.94)), url("https://static.ladipage.net/s600x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+        background-image: -webkit-linear-gradient(rgba(219, 0, 66, 0.94), rgba(219, 0, 66, 0.94)), url("https://static.ladipage.net/s600x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE972 {
+        top: 20px;
+        left: 0px;
+        padding: 0px;
+        width: 355px;
+        height: 100px;
+    }
+
+    #HEADLINE972 > .widget-content {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    #PARAGRAPH975 {
+        top: 158px;
+        left: 23px;
+        padding: 0px;
+        width: 329px;
+        height: 100px;
+    }
+
+    #PARAGRAPH975 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+        line-height: 19px;
+    }
+
+    #FORM973 {
+        top: 225px;
+        left: 20px;
+        width: 335px;
+        height: 58px;
+    }
+
+    #FORM973 > .widget-content {
+        font-size: 16px;
+    }
+
+    #ITEM_FORM977 {
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #ITEM_FORM978 {
+        top: 46px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #BUTTON976 {
+        top: 293px;
+        left: 21px;
+        padding: 0px;
+        width: 333px;
+        height: 51px;
+    }
+
+    #BUTTON976 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #BUTTON980 {
+        top: 10px;
+        left: 15px;
+        padding: 0px;
+        width: 146px;
+        height: 40px;
+    }
+
+    #BUTTON980 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #HEADLINE824 {
+        top: 49px;
+        left: 67px;
+        padding: 0px;
+        width: 355px;
+        height: 49px;
+    }
+
+    #HEADLINE824 > .widget-content {
+        font-size: 30px;
+        text-align: center;
+        line-height: 49px;
+    }
+
+    #HEADLINE825 {
+        top: 23px;
+        left: 52px;
+        padding: 0px;
+        width: 355px;
+        height: 27px;
+    }
+
+    #HEADLINE825 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+        line-height: 27px;
+    }
+
+    #LINE832 {
+        top: 438px;
+        left: 12px;
+        width: 354px;
+        height: 25px;
+    }
+
+    #HEADLINE833 {
+        top: 104px;
+        left: 127px;
+        padding: 0px;
+        width: 355px;
+        height: 90px;
+    }
+
+    #HEADLINE833 > .widget-content {
+        font-size: 12px;
+        text-align: left;
+        line-height: 18px;
+    }
+
+    #LINE834 {
+        top: 84px;
+        left: 126.5px;
+        width: 234px;
+        height: 25px;
+    }
+
+    #HEADLINE837 {
+        top: 274px;
+        left: 11px;
+        padding: 0px;
+        width: 355px;
+        height: 90px;
+    }
+
+    #HEADLINE837 > .widget-content {
+        font-size: 12px;
+        text-align: right;
+        line-height: 15px;
+    }
+
+    #SHAPE838 {
+        display: none !important;
+        top: 497px;
+        left: 177px;
+        width: 21px;
+        height: 21px;
+    }
+
+    #SHAPE839 {
+        display: none !important;
+        top: 842px;
+        left: 177px;
+        width: 21px;
+        height: 21px;
+    }
+
+    #SHAPE840 {
+        display: none !important;
+        top: 878px;
+        left: 177px;
+        width: 21px;
+        height: 21px;
+    }
+
+    #HEADLINE842 {
+        top: 464px;
+        left: 12px;
+        padding: 0px;
+        width: 385px;
+        height: 48px;
+    }
+
+    #HEADLINE842 > .widget-content {
+        font-size: 20px;
+        text-align: left;
+        line-height: 24px;
+    }
+
+    #BOX962 {
+        top: 20px;
+        left: 10px;
+        width: 355px;
+        height: 92px;
+    }
+
+    #BOX962 > .widget-content {
+        background-image: linear-gradient(rgba(219, 0, 66, 0.94), rgba(219, 0, 66, 0.94)), url("https://static.ladipage.net/s600x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+        background-image: -o-linear-gradient(rgba(219, 0, 66, 0.94), rgba(219, 0, 66, 0.94)), url("https://static.ladipage.net/s600x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+        background-image: -ms-linear-gradient(rgba(219, 0, 66, 0.94), rgba(219, 0, 66, 0.94)), url("https://static.ladipage.net/s600x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+        background-image: -moz-linear-gradient(rgba(219, 0, 66, 0.94), rgba(219, 0, 66, 0.94)), url("https://static.ladipage.net/s600x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+        background-image: -webkit-linear-gradient(rgba(219, 0, 66, 0.94), rgba(219, 0, 66, 0.94)), url("https://static.ladipage.net/s600x300/57b167c9ca57d39c18a1c57c/94c45b55-97a2-494f-bbb6-f7ad6dec62be.jpg");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE963 {
+        top: 20px;
+        left: 0px;
+        padding: 0px;
+        width: 355px;
+        height: 100px;
+    }
+
+    #HEADLINE963 > .widget-content {
+        font-size: 26px;
+        text-align: left;
+    }
+
+    #PARAGRAPH964 {
+        top: 158px;
+        left: 23px;
+        padding: 0px;
+        width: 329px;
+        height: 100px;
+    }
+
+    #PARAGRAPH964 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+        line-height: 19px;
+    }
+
+    #FORM965 {
+        top: 225px;
+        left: 20px;
+        width: 335px;
+        height: 58px;
+    }
+
+    #FORM965 > .widget-content {
+        font-size: 16px;
+    }
+
+    #ITEM_FORM966 {
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #ITEM_FORM967 {
+        top: 46px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #ITEM_FORM968 {
+        top: 92px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #BUTTON969 {
+        top: 293px;
+        left: 21px;
+        padding: 0px;
+        width: 333px;
+        height: 51px;
+    }
+
+    #BUTTON969 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #HEADLINE846 {
+        top: 99px;
+        left: 10px;
+        padding: 0px;
+        width: 355px;
+        height: 88px;
+    }
+
+    #HEADLINE846 > .widget-content {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #IMAGE848 .widget-content:first-child .lp-show-image:first-child {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("https://static.ladipage.net/s550x500/5c287a86b0bb7c271ce70c23/hyundai-accent-2017-gia-bao-nhieu-thiet-ke-van-hanh-thong-1549209325.jpg");
+    }
+
+    #IMAGE848 {
+        top: 201px;
+        left: 36.5px;
+        width: 302px;
+        height: 270px;
+    }
+
+    #BOX849 {
+        top: 191px;
+        left: 7px;
+        width: 275px;
+        height: 66px;
+    }
+
+    #HEADLINE850 {
+        top: 12px;
+        left: 9px;
+        padding: 0px;
+        width: 208px;
+        height: 20px;
+    }
+
+    #HEADLINE850 > .widget-content {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #SHAPE851 {
+        top: 18px;
+        left: 228px;
+        width: 32px;
+        height: 32px;
+    }
+
+    #IMAGE852 .widget-content:first-child .lp-show-image:first-child {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("https://static.ladipage.net/s550x500/5c287a86b0bb7c271ce70c23/2-1549214176.png");
+    }
+
+    #IMAGE852 {
+        top: 405px;
+        left: 36.5px;
+        width: 302px;
+        height: 270px;
+    }
+
+    #BOX853 {
+        top: 191px;
+        left: 7px;
+        width: 275px;
+        height: 66px;
+    }
+
+    #HEADLINE854 {
+        top: 12px;
+        left: 9px;
+        padding: 0px;
+        width: 208px;
+        height: 40px;
+    }
+
+    #HEADLINE854 > .widget-content {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #SHAPE855 {
+        top: 18px;
+        left: 228px;
+        width: 32px;
+        height: 32px;
+    }
+
+    #IMAGE856 .widget-content:first-child .lp-show-image:first-child {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("https://static.ladipage.net/s550x500/5c287a86b0bb7c271ce70c23/ban-vang-sjc-1549214310.png");
+    }
+
+    #IMAGE856 {
+        top: 750px;
+        left: 35.5px;
+        width: 302px;
+        height: 270px;
+    }
+
+    #BOX857 {
+        top: 191px;
+        left: 7px;
+        width: 275px;
+        height: 66px;
+    }
+
+    #HEADLINE858 {
+        top: 12px;
+        left: 9px;
+        padding: 0px;
+        width: 208px;
+        height: 40px;
+    }
+
+    #HEADLINE858 > .widget-content {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    #SHAPE859 {
+        top: 18px;
+        left: 228px;
+        width: 32px;
+        height: 32px;
+    }
+
+    #HEADLINE860 {
+        top: 15px;
+        left: 10px;
+        padding: 0px;
+        width: 355px;
+        height: 54px;
+    }
+
+    #HEADLINE860 > .widget-content {
+        font-size: 21px;
+        text-align: center;
+        line-height: 27px;
+    }
+
+    #HEADLINE996 {
+        top: 690px;
+        left: 10px;
+        padding: 0px;
+        width: 355px;
+        height: 27px;
+    }
+
+    #HEADLINE996 > .widget-content {
+        font-size: 21px;
+        text-align: center;
+        line-height: 27px;
+    }
+
+    #IMAGE997 .widget-content:first-child .lp-show-image:first-child {
+        width: 100%;
+        height: 100%;
+        background-position: center center;
+        background-size: cover;
+        background-image: url("https://static.ladipage.net/s550x450/5c287a86b0bb7c271ce70c23/78c5e325e343aeb6b068cbe2c9ad76c0-1549564258.png");
+    }
+
+    #IMAGE997 {
+        top: 1117px;
+        left: 21.5px;
+        width: 342px;
+        height: 220px;
+    }
+
+    #HEADLINE998 {
+        top: 1022px;
+        left: 19.5px;
+        padding: 0px;
+        width: 318px;
+        height: 92px;
+    }
+
+    #HEADLINE998 > .widget-content {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    #BOX27 {
+        top: 10px;
+        left: 36.5px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE15 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE15 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH16 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 102px;
+    }
+
+    #PARAGRAPH16 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE28 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX41 {
+        top: 180px;
+        left: 36.5px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE42 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE42 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH43 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 68px;
+    }
+
+    #PARAGRAPH43 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE44 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX37 {
+        top: 350px;
+        left: 36.5px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE38 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE38 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH39 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 85px;
+    }
+
+    #PARAGRAPH39 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE40 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX926 {
+        top: 15px;
+        left: 36.5px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE927 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE927 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH928 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 85px;
+    }
+
+    #PARAGRAPH928 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE929 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX930 {
+        top: 365px;
+        left: 36.5px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE931 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE931 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH932 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 51px;
+    }
+
+    #PARAGRAPH932 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE933 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX934 {
+        top: 190px;
+        left: 36.5px;
+        width: 302px;
+        height: 160px;
+    }
+
+    #HEADLINE935 {
+        top: 28px;
+        left: 66px;
+        padding: 0px;
+        width: 123px;
+        height: 22px;
+    }
+
+    #HEADLINE935 > .widget-content {
+        font-size: 18px;
+        text-align: left;
+    }
+
+    #PARAGRAPH936 {
+        top: 53px;
+        left: 69px;
+        padding: 0px;
+        width: 217px;
+        height: 85px;
+    }
+
+    #PARAGRAPH936 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #SHAPE937 {
+        top: 28px;
+        left: 14px;
+        width: 48px;
+        height: 48px;
+    }
+
+    #BOX657 {
+        top: 637px;
+        left: 96.5px;
+        width: 182px;
+        height: 138px;
+    }
+
+    #HEADLINE658 {
+        top: 17px;
+        left: 43px;
+        padding: 0px;
+        width: 103px;
+        height: 28px;
+    }
+
+    #HEADLINE658 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #SHAPE659 {
+        top: 56px;
+        left: 73px;
+        width: 39px;
+        height: 39px;
+    }
+
+    #HEADLINE660 {
+        top: 102px;
+        left: 41px;
+        padding: 0px;
+        width: 103px;
+        height: 18px;
+    }
+
+    #HEADLINE660 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #BOX612 {
+        top: 45px;
+        left: 96.5px;
+        width: 182px;
+        height: 138px;
+    }
+
+    #HEADLINE595 {
+        top: 17px;
+        left: 43px;
+        padding: 0px;
+        width: 103px;
+        height: 28px;
+    }
+
+    #HEADLINE595 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #SHAPE593 {
+        top: 56px;
+        left: 73px;
+        width: 39px;
+        height: 39px;
+    }
+
+    #HEADLINE594 {
+        top: 102px;
+        left: 41px;
+        padding: 0px;
+        width: 103px;
+        height: 36px;
+    }
+
+    #HEADLINE594 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #BOX645 {
+        top: 193px;
+        left: 96.5px;
+        width: 182px;
+        height: 138px;
+    }
+
+    #HEADLINE646 {
+        top: 17px;
+        left: 43px;
+        padding: 0px;
+        width: 103px;
+        height: 28px;
+    }
+
+    #HEADLINE646 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #SHAPE647 {
+        top: 56px;
+        left: 73px;
+        width: 39px;
+        height: 39px;
+    }
+
+    #HEADLINE648 {
+        top: 102px;
+        left: 41px;
+        padding: 0px;
+        width: 103px;
+        height: 36px;
+    }
+
+    #HEADLINE648 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #BOX649 {
+        top: 341px;
+        left: 96.5px;
+        width: 182px;
+        height: 138px;
+    }
+
+    #HEADLINE650 {
+        top: 17px;
+        left: 43px;
+        padding: 0px;
+        width: 103px;
+        height: 28px;
+    }
+
+    #HEADLINE650 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #SHAPE651 {
+        top: 56px;
+        left: 73px;
+        width: 39px;
+        height: 39px;
+    }
+
+    #HEADLINE652 {
+        top: 102px;
+        left: 41px;
+        padding: 0px;
+        width: 103px;
+        height: 36px;
+    }
+
+    #HEADLINE652 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #BOX653 {
+        top: 489px;
+        left: 96.5px;
+        width: 182px;
+        height: 138px;
+    }
+
+    #HEADLINE654 {
+        top: 17px;
+        left: 43px;
+        padding: 0px;
+        width: 103px;
+        height: 28px;
+    }
+
+    #HEADLINE654 > .widget-content {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    #SHAPE655 {
+        top: 56px;
+        left: 73px;
+        width: 39px;
+        height: 39px;
+    }
+
+    #HEADLINE656 {
+        top: 102px;
+        left: 41px;
+        padding: 0px;
+        width: 103px;
+        height: 18px;
+    }
+
+    #HEADLINE656 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #HEADLINE590 {
+        top: 10px;
+        left: 38px;
+        padding: 0px;
+        width: 299px;
+        height: 25px;
+    }
+
+    #HEADLINE590 > .widget-content {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    #HEADLINE83 {
+        top: 10px;
+        left: 51px;
+        padding: 0px;
+        width: 273px;
+        height: 46px;
+    }
+
+    #HEADLINE83 > .widget-content {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    #BOX137 {
+        top: 399px;
+        left: 81px;
+        width: 227px;
+        height: 334px;
+    }
+
+    #BOX138 {
+        top: 4px;
+        left: 7px;
+        width: 214px;
+        height: 227px;
+    }
+
+    #BOX138 > .widget-content {
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE139 {
+        top: 254px;
+        left: 20px;
+        padding: 0px;
+        width: 195px;
+        height: 40px;
+    }
+
+    #HEADLINE139 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #HEADLINE140 {
+        top: 305px;
+        left: 18px;
+        padding: 0px;
+        width: 52px;
+        height: 25px;
+    }
+
+    #HEADLINE140 > .widget-content {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    #SHAPE141 {
+        top: 308px;
+        left: 44px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #BUTTON892 {
+        top: 296.719px;
+        left: 125px;
+        padding: 0px;
+        width: 89px;
+        height: 27px;
+    }
+
+    #BUTTON892 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #PARAGRAPH894 {
+        top: 295px;
+        left: 20px;
+        padding: 0px;
+        width: 81px;
+        height: 19px;
+    }
+
+    #PARAGRAPH894 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #BOX96 {
+        top: 57px;
+        left: 82px;
+        width: 227px;
+        height: 335px;
+    }
+
+    #BOX97 {
+        top: 4px;
+        left: 7px;
+        width: 214px;
+        height: 227px;
+    }
+
+    #BOX97 > .widget-content {
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/717ee541-fc11-4dbd-8141-f2107eff351f.jpg");
+        background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/717ee541-fc11-4dbd-8141-f2107eff351f.jpg");
+        background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/717ee541-fc11-4dbd-8141-f2107eff351f.jpg");
+        background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/717ee541-fc11-4dbd-8141-f2107eff351f.jpg");
+        background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/717ee541-fc11-4dbd-8141-f2107eff351f.jpg");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE98 {
+        top: 241px;
+        left: 20px;
+        padding: 0px;
+        width: 195px;
+        height: 40px;
+    }
+
+    #HEADLINE98 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #PARAGRAPH890 {
+        top: 277px;
+        left: 19px;
+        padding: 0px;
+        width: 81px;
+        height: 19px;
+    }
+
+    #PARAGRAPH890 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #BUTTON891 {
+        top: 293px;
+        left: 129px;
+        padding: 0px;
+        width: 89px;
+        height: 27px;
+    }
+
+    #BUTTON891 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #HEADLINE889 {
+        top: 294px;
+        left: 20px;
+        padding: 0px;
+        width: 52px;
+        height: 25px;
+    }
+
+    #HEADLINE889 > .widget-content {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    #SHAPE103 {
+        top: 298px;
+        left: 43px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #SHAPE886 {
+        top: 7px;
+        left: 17px;
+        width: 41px;
+        height: 41px;
+    }
+
+    #SHAPE887 {
+        top: 10px;
+        left: 322px;
+        width: 41px;
+        height: 41px;
+    }
+
+    #BOX895 {
+        top: 1140px;
+        left: 82px;
+        width: 227px;
+        height: 374px;
+    }
+
+    #BOX896 {
+        top: 4px;
+        left: 7px;
+        width: 214px;
+        height: 227px;
+    }
+
+    #BOX896 > .widget-content {
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE897 {
+        top: 254px;
+        left: 20px;
+        padding: 0px;
+        width: 195px;
+        height: 40px;
+    }
+
+    #HEADLINE897 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #HEADLINE898 {
+        top: 325px;
+        left: 18px;
+        padding: 0px;
+        width: 52px;
+        height: 25px;
+    }
+
+    #HEADLINE898 > .widget-content {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    #SHAPE899 {
+        top: 327px;
+        left: 43px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #BUTTON900 {
+        top: 339.719px;
+        left: 125.797px;
+        padding: 0px;
+        width: 89px;
+        height: 27px;
+    }
+
+    #BUTTON900 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #PARAGRAPH901 {
+        top: 300.719px;
+        left: 18px;
+        padding: 0px;
+        width: 81px;
+        height: 19px;
+    }
+
+    #PARAGRAPH901 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #BOX902 {
+        top: 749px;
+        left: 81px;
+        width: 227px;
+        height: 374px;
+    }
+
+    #BOX903 {
+        top: 4px;
+        left: 7px;
+        width: 214px;
+        height: 227px;
+    }
+
+    #BOX903 > .widget-content {
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s450x450/uploads/images/042bc1fb-79a9-4192-b2a1-71c5a1a4fcd6.jpg");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE904 {
+        top: 254px;
+        left: 20px;
+        padding: 0px;
+        width: 195px;
+        height: 40px;
+    }
+
+    #HEADLINE904 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    #HEADLINE905 {
+        top: 325px;
+        left: 18px;
+        padding: 0px;
+        width: 52px;
+        height: 25px;
+    }
+
+    #HEADLINE905 > .widget-content {
+        font-size: 21px;
+        text-align: left;
+    }
+
+    #SHAPE906 {
+        top: 327px;
+        left: 43px;
+        width: 20px;
+        height: 20px;
+    }
+
+    #BUTTON907 {
+        top: 339.719px;
+        left: 125.797px;
+        padding: 0px;
+        width: 89px;
+        height: 27px;
+    }
+
+    #BUTTON907 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #PARAGRAPH908 {
+        top: 300.719px;
+        left: 18px;
+        padding: 0px;
+        width: 81px;
+        height: 19px;
+    }
+
+    #PARAGRAPH908 > .widget-content {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    #BOX948 {
+        top: 20px;
+        left: 10px;
+        width: 355px;
+        height: 4px;
+    }
+
+    #BOX948 > .widget-content {
+        background-image: linear-gradient(rgba(201, 60, 0, 0.88), rgba(201, 60, 0, 0.88)), url("https://static.ladipage.net/s600x250/57b167c9ca57d39c18a1c57c/coffee-notebook-pencil-work-desk-163131.jpg");
+        background-image: -o-linear-gradient(rgba(201, 60, 0, 0.88), rgba(201, 60, 0, 0.88)), url("https://static.ladipage.net/s600x250/57b167c9ca57d39c18a1c57c/coffee-notebook-pencil-work-desk-163131.jpg");
+        background-image: -ms-linear-gradient(rgba(201, 60, 0, 0.88), rgba(201, 60, 0, 0.88)), url("https://static.ladipage.net/s600x250/57b167c9ca57d39c18a1c57c/coffee-notebook-pencil-work-desk-163131.jpg");
+        background-image: -moz-linear-gradient(rgba(201, 60, 0, 0.88), rgba(201, 60, 0, 0.88)), url("https://static.ladipage.net/s600x250/57b167c9ca57d39c18a1c57c/coffee-notebook-pencil-work-desk-163131.jpg");
+        background-image: -webkit-linear-gradient(rgba(201, 60, 0, 0.88), rgba(201, 60, 0, 0.88)), url("https://static.ladipage.net/s600x250/57b167c9ca57d39c18a1c57c/coffee-notebook-pencil-work-desk-163131.jpg");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE949 {
+        top: 20px;
+        left: 0px;
+        padding: 0px;
+        width: 355px;
+        height: 100px;
+    }
+
+    #HEADLINE949 > .widget-content {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    #FORM950 {
+        top: 172px;
+        left: 37.5px;
+        width: 300px;
+        height: 125.5625px;
+    }
+
+    #ITEM_FORM951 {
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 33px;
+    }
+
+    #ITEM_FORM952 {
+        top: 90px;
+        left: 0px;
+        width: 300px;
+        height: 33px;
+    }
+
+    #ITEM_FORM953 {
+        top: 88.6634px;
+        left: 0px;
+        width: 300px;
+        height: 36px;
+    }
+
+    #ITEM_FORM954 {
+        top: 134.797px;
+        left: 0px;
+        width: 300px;
+        height: 66px;
+    }
+
+    #BUTTON955 {
+        top: 175.563px;
+        left: 90px;
+        padding: 0px;
+        width: 195px;
+        height: 40px;
+    }
+
+    #BUTTON955 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #PARAGRAPH956 {
+        top: 162px;
+        left: 10px;
+        padding: 0px;
+        width: 355px;
+        height: 100px;
+    }
+
+    #PARAGRAPH956 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #PARAGRAPH957 {
+        top: 162px;
+        left: 10px;
+        padding: 0px;
+        width: 269px;
+        height: 100px;
+    }
+
+    #PARAGRAPH957 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #BOX958 {
+        top: 10px;
+        left: 15px;
+        width: 88px;
+        height: 88px;
+    }
+
+    #PARAGRAPH959 {
+        top: 162px;
+        left: 10px;
+        padding: 0px;
+        width: 269px;
+        height: 100px;
+    }
+
+    #PARAGRAPH959 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #LINEVERTICAL960 {
+        width: 25px;
+        height: 373px;
+    }
+
+    #BOX677 {
+        top: 722px;
+        left: 96.438px;
+        width: 182px;
+        height: 295px;
+    }
+
+    #BOX678 {
+        top: 1px;
+        left: 1px;
+        width: 180px;
+        height: 226px;
+    }
+
+    #BOX678 > .widget-content {
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/5317e86c-14c0-4ff0-8c1b-412531074c89.png");
+        background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/5317e86c-14c0-4ff0-8c1b-412531074c89.png");
+        background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/5317e86c-14c0-4ff0-8c1b-412531074c89.png");
+        background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/5317e86c-14c0-4ff0-8c1b-412531074c89.png");
+        background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/5317e86c-14c0-4ff0-8c1b-412531074c89.png");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE680 {
+        top: 240px;
+        left: 10px;
+        padding: 0px;
+        width: 160px;
+        height: 17px;
+    }
+
+    #HEADLINE680 > .widget-content {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #HEADLINE681 {
+        top: 260px;
+        left: 39px;
+        padding: 0px;
+        width: 102px;
+        height: 22px;
+    }
+
+    #HEADLINE681 > .widget-content {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #BOX682 {
+        top: 1030px;
+        left: 97.436px;
+        width: 182px;
+        height: 295px;
+    }
+
+    #BOX683 {
+        top: 1px;
+        left: 1px;
+        width: 180px;
+        height: 226px;
+    }
+
+    #BOX683 > .widget-content {
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/aad0bc08-0889-46ef-a1c5-9d54d7113167.png");
+        background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/aad0bc08-0889-46ef-a1c5-9d54d7113167.png");
+        background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/aad0bc08-0889-46ef-a1c5-9d54d7113167.png");
+        background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/aad0bc08-0889-46ef-a1c5-9d54d7113167.png");
+        background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/aad0bc08-0889-46ef-a1c5-9d54d7113167.png");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE685 {
+        top: 240px;
+        left: 9px;
+        padding: 0px;
+        width: 160px;
+        height: 17px;
+    }
+
+    #HEADLINE685 > .widget-content {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #HEADLINE686 {
+        top: 260px;
+        left: 38px;
+        padding: 0px;
+        width: 102px;
+        height: 22px;
+    }
+
+    #HEADLINE686 > .widget-content {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #BOX702 {
+        top: 1336px;
+        left: 96.453px;
+        width: 182px;
+        height: 295px;
+    }
+
+    #BOX703 {
+        top: 1px;
+        left: 1px;
+        width: 180px;
+        height: 226px;
+    }
+
+    #BOX703 > .widget-content {
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/e4d758c4-1ac6-4187-b383-62c3b0bae4d6.png");
+        background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/e4d758c4-1ac6-4187-b383-62c3b0bae4d6.png");
+        background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/e4d758c4-1ac6-4187-b383-62c3b0bae4d6.png");
+        background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/e4d758c4-1ac6-4187-b383-62c3b0bae4d6.png");
+        background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/e4d758c4-1ac6-4187-b383-62c3b0bae4d6.png");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE705 {
+        top: 240px;
+        left: 9px;
+        padding: 0px;
+        width: 160px;
+        height: 17px;
+    }
+
+    #HEADLINE705 > .widget-content {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #HEADLINE706 {
+        top: 260px;
+        left: 38px;
+        padding: 0px;
+        width: 102px;
+        height: 22px;
+    }
+
+    #HEADLINE706 > .widget-content {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #BOX707 {
+        top: 418px;
+        left: 99.453px;
+        width: 182px;
+        height: 295px;
+    }
+
+    #BOX708 {
+        top: 1px;
+        left: 1px;
+        width: 180px;
+        height: 226px;
+    }
+
+    #BOX708 > .widget-content {
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/6ab989fe-2d95-4cd9-8574-1abe0377eac0.jpg");
+        background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/6ab989fe-2d95-4cd9-8574-1abe0377eac0.jpg");
+        background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/6ab989fe-2d95-4cd9-8574-1abe0377eac0.jpg");
+        background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/6ab989fe-2d95-4cd9-8574-1abe0377eac0.jpg");
+        background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/6ab989fe-2d95-4cd9-8574-1abe0377eac0.jpg");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE710 {
+        top: 240px;
+        left: 9px;
+        padding: 0px;
+        width: 160px;
+        height: 17px;
+    }
+
+    #HEADLINE710 > .widget-content {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #HEADLINE711 {
+        top: 260px;
+        left: 38px;
+        padding: 0px;
+        width: 102px;
+        height: 22px;
+    }
+
+    #HEADLINE711 > .widget-content {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #HEADLINE718 {
+        top: 10px;
+        left: 35.5px;
+        padding: 0px;
+        width: 306px;
+        height: 75px;
+    }
+
+    #HEADLINE718 > .widget-content {
+        font-size: 21px;
+        text-align: center;
+    }
+
+    #BOX719 {
+        top: 114px;
+        left: 99.453px;
+        width: 182px;
+        height: 295px;
+    }
+
+    #BOX720 {
+        top: 1px;
+        left: 1px;
+        width: 180px;
+        height: 226px;
+    }
+
+    #BOX720 > .widget-content {
+        background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/412fd665-a754-45f6-b865-25ba8bb425cb.jpg");
+        background-image: -o-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/412fd665-a754-45f6-b865-25ba8bb425cb.jpg");
+        background-image: -ms-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/412fd665-a754-45f6-b865-25ba8bb425cb.jpg");
+        background-image: -moz-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/412fd665-a754-45f6-b865-25ba8bb425cb.jpg");
+        background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://static.ladipage.net/s400x450/uploads/images/412fd665-a754-45f6-b865-25ba8bb425cb.jpg");
+        background-origin: content-box;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: top center;
+        background-repeat: no-repeat;
+    }
+
+    #HEADLINE721 {
+        top: 240px;
+        left: 9px;
+        padding: 0px;
+        width: 160px;
+        height: 17px;
+    }
+
+    #HEADLINE721 > .widget-content {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    #HEADLINE722 {
+        top: 260px;
+        left: 38px;
+        padding: 0px;
+        width: 102px;
+        height: 22px;
+    }
+
+    #HEADLINE722 > .widget-content {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    #HEADLINE777 {
+        top: 387px;
+        left: 55px;
+        padding: 0px;
+        width: 256px;
+        height: 54px;
+    }
+
+    #HEADLINE777 > .widget-content {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    #LINE778 {
+        top: 354px;
+        left: 33px;
+        width: 300px;
+        height: 25px;
+    }
+
+    #HEADLINE783 {
+        top: 61px;
+        left: 35px;
+        padding: 0px;
+        width: 300px;
+        height: 80px;
+    }
+
+    #HEADLINE783 > .widget-content {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #HEADLINE909 {
+        top: 216px;
+        left: 13px;
+        padding: 0px;
+        width: 355px;
+        height: 100px;
+    }
+
+    #HEADLINE909 > .widget-content {
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        width: 375px !important;
+    }
+}

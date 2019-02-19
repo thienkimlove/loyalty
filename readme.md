@@ -7,7 +7,7 @@ Install with composer `composer create-project --prefer-dist laravel/laravel uoc
 Mysql 
 
 ```textmate
-CREATE DATABASE uocmo CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE loyalty CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
 CREATE USER 'root2'@'localhost' IDENTIFIED WITH mysql_native_password BY 'tieungao';
 
@@ -45,3 +45,9 @@ Run `php artisan serve` to start server on 8000
 * Icon list `https://www.w3schools.com/icons/fontawesome_icons_webapp.asp`
 
 * Masonary Script `https://masonry.desandro.com/#cdn`
+
+================
+
+## Create new project from this template
+
+* 
